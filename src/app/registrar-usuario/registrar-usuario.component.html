@@ -1,0 +1,51 @@
+<div class="general">
+<header>
+    <h1 class="center">{{ title }}</h1>
+  </header>
+<div class="register">
+    <form class="example-form">
+        <mat-form-field>
+            <mat-label> Ingresa tu nombre </mat-label>
+            <input matInput placeholder="Ej. Juan Perez">
+    </mat-form-field>
+    </form>
+
+    <form class="example-form">
+        <mat-form-field>
+            <mat-label> Ingresa tu codigo </mat-label>
+            <input matInput placeholder="Ej. 1810010945">
+    </mat-form-field>
+    </form>
+
+    <form class="example-form">
+        <mat-form-field>
+            <mat-label> Ingresa tu correo </mat-label>
+            <input matInput placeholder="Ej. pat@poligran.edu.co">
+    </mat-form-field>
+    </form>
+
+    <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Ingresa tu contraseña</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+    </div>
+
+    <label id="example-radio-group-label">Elige tu rol</label>
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="rolUsuario">
+    <mat-radio-button class="example-radio-button" *ngFor="let rol of roles" [value]="rol">
+    {{rol}}
+    </mat-radio-button>
+    </mat-radio-group>
+
+    <div>El rol escogido es: {{rolUsuario}}</div>
+    <br>
+    <div class="register-button">
+    <button mat-raised-button color="primary">Regístrate</button>
+    </div>
+</div>
+</div>
+
