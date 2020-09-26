@@ -1,0 +1,48 @@
+.general{
+    height: 500px;
+    
+    }
+    .Cabecera{
+      width: 1000px;
+      position: relative; left: 300px;
+      background: rgb(0,236,255);
+      background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+      padding: 2% 10%;
+      text-align: center;
+    }
+    h1{
+      font-size: 60px;
+      font-family: fantasy;
+      color:#D0D3D4;
+    }
+
+    h2{
+      font-size: 30px;
+      font-family: fantasy;
+      color: #2A4076;
+    }
+    .proyect-form {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    .registerProyect{
+      margin-left: 350px;
+      margin-top: 50px;
+    }
+
+    .objects-proyect {
+      width: 100%;
+    }
+
+    .title-proyect {
+      width: 150%;
+    }
+
+  .editor{
+    margin-bottom: 20px;
+    max-width: 900px;
+    border:#3D60B6 5px solid;
+    
+  }
