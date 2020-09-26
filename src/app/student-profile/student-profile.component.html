@@ -1,0 +1,63 @@
+<div class="general">
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+    <div class="profile">
+        <div class="switch">
+            <mat-slide-toggle (click)="cambiarStatus()" [color]="color">Status</mat-slide-toggle> 
+        </div>
+    <div class="image">
+        <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="ProfilePicture" width="250" height="200">
+    </div>
+        <p>
+        <label for="nombreLabel">Nombre: </label>
+        <label for="nombreEstudiante">Juan Rivera</label>
+    </p>
+    <p>
+        <label for="codigoLabel">Codigo: </label>
+        <label for="codigoEstudiante"> 1234567890</label>
+    </p>
+    <p>
+        <label for="tutorLabel">Tutor: </label>
+        <label for="tutor"> Juan Carlos Prieto</label>
+    </p>
+    <div class="update-picture">
+        <button mat-raised-button color="primary">Actualizar foto</button>
+    </div>
+    
+    </div>
+    
+    <div class="procesos">
+        <p *ngIf="!this.online">
+            <label for="labelStatus">Status: </label>
+            <label for="status">Online</label>
+        </p>
+        <p  *ngIf="this.online">
+            <label for="labelStatus">Status: </label>
+            <label for="status">Offline</label>
+        </p>
+        <p>
+            <label for="proyectoLabel">Proyecto: </label>
+            <label for="proyecto">No tiene proyectos registrados</label>
+        </p>
+
+        <div class="buttons">
+            <div class="update-button">
+                <button mat-raised-button color="primary">Actualizar proyecto</button>
+            </div>
+
+            <div class="new-proyect-button">
+                <button mat-raised-button color="primary">Registrar proyecto</button>
+            </div>
+
+            <div class="compromise-button">
+                <button mat-raised-button color="primary">Mis compromisos</button>
+            </div>
+
+            <div class="tasks-button">
+                <button mat-raised-button color="primary">Mis tareas</button>
+            </div>
+        </div>
+    
+    </div>
+</div>

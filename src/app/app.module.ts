@@ -13,12 +13,17 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
+import { StudentProfileComponent } from './student-profile/student-profile.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrarUsuarioComponent
+    RegistrarUsuarioComponent,
+    StudentProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatRadioModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatSlideToggleModule
+    
 
     
   ],
