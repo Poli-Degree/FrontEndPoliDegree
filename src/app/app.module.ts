@@ -17,13 +17,16 @@ import { StudentProfileComponent } from './student-profile/student-profile.compo
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
+import { FormProyectComponent } from './form-proyect/form-proyect.component';
 
-
+import {ButtonModule} from 'primeng/button';
+import {EditorModule} from 'primeng/editor';
 @NgModule({
   declarations: [
     AppComponent,
     RegistrarUsuarioComponent,
-    StudentProfileComponent
+    StudentProfileComponent,
+    FormProyectComponent
   ],
   imports: [
     BrowserModule,
@@ -35,8 +38,10 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatRadioModule,
     MatFormFieldModule,
     MatIconModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
     
+    ButtonModule,
+    EditorModule
 
     
   ],
