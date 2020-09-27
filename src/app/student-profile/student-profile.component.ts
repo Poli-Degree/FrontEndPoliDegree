@@ -11,7 +11,7 @@ export class StudentProfileComponent implements OnInit {
   title: string;
   constructor() { 
     this.title = 'Estudiante';
-    this.online = true; 
+    this.online = false; 
   }
   color: ThemePalette = 'primary'
 

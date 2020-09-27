@@ -2,8 +2,8 @@
 height: 500px;
 
 }
-header{
-  width: 600px;
+.Cabecera{
+  width: 865px;
   position: relative; left: 260px;
   background: rgb(0,236,255);
   background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
@@ -36,6 +36,7 @@ h1{
 
 .register{
   margin-left: 600px;
+  padding: 10px;
 }
 
 .register-button{

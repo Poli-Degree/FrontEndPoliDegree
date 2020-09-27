@@ -1,0 +1,52 @@
+<div class="general">
+    <div class="Cabecera">
+        <h1 class="center">{{ title }}</h1>
+    </div>
+    <div class="compromise-info">
+        <label for="labelCompromise-id">Compromiso id: </label>
+        <label for="compromise-id"></label>
+        <form class="compromise-asunto">
+            <mat-form-field>
+                <mat-label> Ingresa el asunto del compromiso </mat-label>
+                <input matInput placeholder="Ej. 001">
+        </mat-form-field>
+        </form>
+
+        <form class="proyect-id-form">
+            <mat-form-field>
+                <mat-label> Ingresa el id de tu proyecto </mat-label>
+                <input matInput placeholder="Ej. 2">
+        </mat-form-field>
+        </form>
+
+        <p>
+            <label for="tutorLabel">Tutor: </label>
+            <label for="tutor"> Juan Carlos Prieto</label>
+        </p>
+
+        <div class="create-date">
+            <label for="icon">Fecha de creacion: </label>
+            <p-calendar [(ngModel)]="date" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+        <br>
+
+        <div class="description">
+            <label for="description">Describe tu compromiso: </label>
+            <p-editor [style]="{'height':'200px'}"></p-editor>
+        </div>
+        <br>
+
+        <div class="save-compromise">
+            <button mat-raised-button color="primary">Crear compromiso </button>
+        </div>
+
+    </div>
+
+    <div class="compromise-list">
+        <div class="titulo-list">
+            <h2>Compromisos creados</h2>
+        </div>
+        <label for="compromiso1">Compromiso 26/08.pdf</label>
+
+    </div>
+</div>

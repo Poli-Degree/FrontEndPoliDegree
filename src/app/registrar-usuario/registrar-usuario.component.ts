@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../models/user.model';
+import {ThemePalette} from '@angular/material/core';
 
 @Component({
   selector: 'app-registrar-usuario',
@@ -21,6 +22,7 @@ export class RegistrarUsuarioComponent implements OnInit {
   rolUsuario: string;
   roles: string[] = ['Estudiante', 'Tutor', 'Jurado'];
   hide = true;
+  color: ThemePalette = 'primary'
 
   ngOnInit(): void {
   }

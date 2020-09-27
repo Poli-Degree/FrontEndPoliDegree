@@ -1,0 +1,48 @@
+.general{
+    height: 500px;
+    
+}
+.Cabecera{
+    width: 865px;
+    position: relative; left: 260px;
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    padding: 2% 10%;
+    text-align: center;
+  }
+h1{
+    font-size: 60px;
+    font-family: fantasy;
+    color:#D0D3D4;
+}
+.compromise-info{
+    padding: 10px;
+    border: #3D60B6 3px solid;
+    width: 450px;
+    position: relative; left: 260px;
+}
+
+.save-compromise{
+    text-align: center;
+}
+
+.compromise-list{
+    padding: 10px;
+    border: #3D60B6 3px solid;
+    width: 418px;
+    position: relative; left: 707px;
+    bottom: 592px;
+    height:592px;
+
+}
+.titulo-list{
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    
+}
+h2{
+    font-size: 30px;
+    font-family: fantasy;
+    color:#D0D3D4;
+}

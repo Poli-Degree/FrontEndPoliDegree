@@ -29,11 +29,11 @@
     </div>
     
     <div class="procesos">
-        <p *ngIf="!this.online">
+        <p *ngIf="this.online">
             <label for="labelStatus">Status: </label>
             <label for="status">Online</label>
         </p>
-        <p  *ngIf="this.online">
+        <p  *ngIf="!this.online">
             <label for="labelStatus">Status: </label>
             <label for="status">Offline</label>
         </p>

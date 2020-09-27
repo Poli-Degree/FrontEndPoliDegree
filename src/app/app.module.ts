@@ -21,12 +21,17 @@ import { FormProyectComponent } from './form-proyect/form-proyect.component';
 
 import {ButtonModule} from 'primeng/button';
 import {EditorModule} from 'primeng/editor';
+import { FormCompromisesComponent } from './form-compromises/form-compromises.component';
+import {CalendarModule} from 'primeng/calendar';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     RegistrarUsuarioComponent,
     StudentProfileComponent,
-    FormProyectComponent
+    FormProyectComponent,
+    FormCompromisesComponent
   ],
   imports: [
     BrowserModule,
@@ -39,9 +44,9 @@ import {EditorModule} from 'primeng/editor';
     MatFormFieldModule,
     MatIconModule,
     MatSlideToggleModule,
-    
     ButtonModule,
-    EditorModule
+    EditorModule,
+    CalendarModule
 
     
   ],
