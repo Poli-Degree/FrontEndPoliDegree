@@ -12,7 +12,7 @@ export class TaskFormComponent implements OnInit {
   title: string;
   creationDate: Date;
   dateLimit: Date;
-  aunto: string;
+  asunto: string;
   idProyect: number;
   description: string;
 
@@ -28,7 +28,7 @@ export class TaskFormComponent implements OnInit {
 
     let newTask: Task = {
     
-    asunto: this.aunto,
+    asunto: this.asunto,
     idProyect: this.idProyect,
     creationDate: this.creationDate,
     limitDate: this.dateLimit,

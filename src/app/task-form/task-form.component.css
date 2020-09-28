@@ -20,19 +20,21 @@ h1{
     border: #3D60B6 3px solid;
     width: 450px;
     position: relative; left: 260px;
+    height: 700px;
 }
 
 .save-task{
     text-align: center;
+    position: relative; top: 90px;
 }
 
 .task-list{
     padding: 10px;
     border: #3D60B6 3px solid;
     width: 418px;
-    position: relative; left: 707px;
-    bottom: 640px;
-    height:639px;
+    position: relative; left: 434px;
+    bottom: 591px;
+    height:700px;
 
 }
 .titulo-list{
@@ -45,4 +47,30 @@ h2{
     font-size: 30px;
     font-family: fantasy;
     color:#D0D3D4;
+}
+
+.input-asunto-tarea{
+    position: relative; 
+    top: 20px;
+}
+
+.input-id-proyecto{
+    position: relative; 
+    top: 50px;
+
+}
+.create-date{
+    position: relative; 
+    top: 70px;
+}
+
+.limit-date{
+    position: relative; 
+    top: 90px;
+}
+
+.description{
+    position: relative;  
+    top: 90px;
+    
 }

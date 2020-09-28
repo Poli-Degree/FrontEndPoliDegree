@@ -1,47 +1,49 @@
 <div class="general">
+
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
+
     <div class="task-info">
         <label for="labelTask-id">Tarea id: </label>
         <label for="task-id"></label>
-        <form class="taskk-asunto">
-            <mat-form-field>
-                <mat-label> Ingresa el asunto de la tarea: </mat-label>
-                <input matInput>
-        </mat-form-field>
-        </form>
+    
 
-        <form class="proyect-id-form">
-            <mat-form-field>
-                <mat-label> Ingresa el id de tu proyecto </mat-label>
-                <input matInput>
-        </mat-form-field>
-        </form>
+    <div class="input-asunto-tarea">
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText [(ngModel)]="asunto">
+            <label for="float-input">Asunto de la tarea</label>
+        </span>
+    </div>
 
-        <div class="create-date">
-            <label for="icon">Fecha de creacion: </label>
-            <br>
-            <p-calendar [(ngModel)]="creationDate" [showIcon]="true" inputId="icon"></p-calendar>
-        </div>
+    <div class="input-id-proyecto">
+        <span class="p-float-label">
+            <input id="float-input" type="number" pInputText [(ngModel)]="idProyect">
+            <label for="float-input">Proyecto ID</label>
+        </span>
+    </div>
+
+    <div class="create-date">
+        <label for="icon">Fecha de creacion: </label>
+        <br>
+        <p-calendar [(ngModel)]="creationDate" [showIcon]="true" inputId="icon"></p-calendar>
+    </div>
         
-        <div class="limit-date">
-            <label for="icon">Fecha limite: </label>
-            <br>
-            <p-calendar [(ngModel)]="dateLimit" [showIcon]="true" inputId="icon"></p-calendar>
-        </div>
+    <div class="limit-date">
+        <label for="icon">Fecha limite: </label>
         <br>
+        <p-calendar [(ngModel)]="dateLimit" [showIcon]="true" inputId="icon"></p-calendar>
+    </div>
+    <br>
 
-        <div class="description">
-            <label for="description">Describe tu tarea: </label>
-            <p-editor [style]="{'height':'200px'}" [(ngModel)]="description"></p-editor>
-        </div>
-        <br>
+    <div class="description">
+        <label for="description">Describe tu tarea: </label>
+        <p-editor [style]="{'height':'200px'}" [(ngModel)]="description"></p-editor>
+    </div>
+    <br>
 
-        <div class="save-task">
-            <button  (click)="taskCreation()" mat-raised-button color="primary">Crear tarea </button>
-        </div>
-
+    <div class="save-task">
+        <button  (click)="taskCreation()" mat-raised-button color="primary">Crear tarea </button>
     </div>
 
     <div class="task-list">
@@ -50,6 +52,7 @@
         </div>
         <label for="Tarea1">Tarea 28/08.pdf</label>
 
+    </div>
     </div>
 </div>
 
