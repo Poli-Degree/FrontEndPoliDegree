@@ -8,7 +8,7 @@ import {Proyect} from '../models/proyect.model';
 })
 export class FormProyectComponent implements OnInit {
 
-  
+  titleProyect: string;
   objects: string;
   metodologico: string;
   teorico: string;
@@ -26,7 +26,7 @@ export class FormProyectComponent implements OnInit {
 
     let newProyect: Proyect= {
       idProyect: 1,
-      title: this.title,
+      titleProyect: this.titleProyect,
       objects: this.objects,
       metodologia: this.metodologico,
       teorico: this.teorico,

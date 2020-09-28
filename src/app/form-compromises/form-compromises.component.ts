@@ -8,7 +8,13 @@ import { Compromise } from '../models/compromise.model';
 })
 export class FormCompromisesComponent implements OnInit {
   title: string;
-  miCompromiso: Compromise;
+  idCompromise: number;
+  idProyect: number;
+  description: string;
+  dateCreate: Date;
+  tutor: string;
+  asuntoCompromiso: string;
+
   constructor() {
     this.title = 'Mis Compromisos'
    }
@@ -17,5 +23,19 @@ export class FormCompromisesComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
+  crearCompromiso(){
+    let newCompromise: Compromise={
+      idCompromise: this.idCompromise,
+      asuntoCompromiso: this.asuntoCompromiso,
+      idProyect: this.idProyect,
+      description: this.description,
+      dateCreate: this.dateCreate,
+      tutor: this.tutor
+    }
+    console.log(newCompromise);
+  }
+
+  
 
 }

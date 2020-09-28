@@ -32,13 +32,41 @@ h1{
   width: 100%;
 }
 
+.example-container{
+  position: relative; left: 620px;
+  top: 110px;
+}
 
+.rolBox{
+  position: relative; left: 620px;
+  top: 110px;
 
-.register{
-  margin-left: 600px;
-  padding: 10px;
+}
+
+.rolChoose{
+  position: relative; left: 620px;
+  top: 110px;
+
 }
 
 .register-button{
   margin-left: 80px;
+  position: relative; left: 610px;
+  top: 110px;
 }
+
+.input-nombre-registro{
+  position: relative; left: 620px;
+  top: 30px;
+}
+
+.input-codigo-registro{
+  position: relative; left: 620px;
+  top: 60px;
+}
+
+.input-correo-registro{
+  position: relative; left: 620px;
+  top: 90px;
+}
+

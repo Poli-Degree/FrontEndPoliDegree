@@ -2,42 +2,47 @@
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
+
     <div class="compromise-info">
+
+        
+
         <label for="labelCompromise-id">Compromiso id: </label>
-        <label for="compromise-id"></label>
-        <form class="compromise-asunto">
-            <mat-form-field>
-                <mat-label> Ingresa el asunto del compromiso </mat-label>
-                <input matInput placeholder="Ej. 001">
-        </mat-form-field>
-        </form>
+        <label for="labelCompromise-id">001</label>
 
-        <form class="proyect-id-form">
-            <mat-form-field>
-                <mat-label> Ingresa el id de tu proyecto </mat-label>
-                <input matInput placeholder="Ej. 2">
-        </mat-form-field>
-        </form>
+        <div class="inputAsunto">
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText [(ngModel)]="asuntoCompromiso"> 
+            <label for="float-input">Asunto del compromiso</label>
+        </span>
+        </div>
 
-        <p>
+        <div class="inputProyecto">
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText [(ngModel)]="idProyect"> 
+            <label for="float-input">Proyecto ID</label>  
+        </span>
+        </div>
+
+        <p class="labelTutor">
             <label for="tutorLabel">Tutor: </label>
-            <label for="tutor"> Juan Carlos Prieto</label>
+            <label for="tutor"> {{tutor}}</label>
         </p>
 
         <div class="create-date">
             <label for="icon">Fecha de creacion: </label>
-            <p-calendar [(ngModel)]="date" [showIcon]="true" inputId="icon"></p-calendar>
+            <p-calendar [(ngModel)]="dateCreate" [showIcon]="true" inputId="icon"></p-calendar>
         </div>
         <br>
 
         <div class="description">
-            <label for="description">Describe tu compromiso: </label>
-            <p-editor [style]="{'height':'200px'}"></p-editor>
+            <label>Describe tu compromiso: </label>
+            <p-editor [(ngModel)]="description" [style]="{'height':'200px'}"></p-editor >
         </div>
         <br>
 
         <div class="save-compromise">
-            <button mat-raised-button color="primary">Crear compromiso </button>
+            <button mat-raised-button color="primary" (click)="crearCompromiso()">Crear compromiso </button>
         </div>
 
     </div>

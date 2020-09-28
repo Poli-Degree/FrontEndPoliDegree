@@ -3,7 +3,5 @@ export class Usuario{
     codigo: number;
     correo: string;
     password: string;
-    favoriteSeason: string;
-    seasons: string[];
     
 }

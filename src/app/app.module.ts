@@ -23,6 +23,7 @@ import {ButtonModule} from 'primeng/button';
 import {EditorModule} from 'primeng/editor';
 import { FormCompromisesComponent } from './form-compromises/form-compromises.component';
 import {CalendarModule} from 'primeng/calendar';
+import {InputTextModule} from 'primeng/inputtext';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import {CalendarModule} from 'primeng/calendar';
     MatSlideToggleModule,
     ButtonModule,
     EditorModule,
-    CalendarModule
+    CalendarModule,
+    InputTextModule
 
     
   ],

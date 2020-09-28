@@ -9,15 +9,15 @@ import {ThemePalette} from '@angular/material/core';
 })
 export class RegistrarUsuarioComponent implements OnInit {
   title: string;
-  miUsuario: Usuario;
+  nombre: string;
+  codigo: number;
+  correo: string;
+  password: string;
+  favoriteSeason: string;
+  seasons: string[];
 
   constructor() { 
     this.title = 'Registro Poli Degree';
-    this.miUsuario = new Usuario();
-    this.miUsuario.nombre = this.miUsuario.nombre;
-    this.miUsuario.codigo = this.miUsuario.codigo;
-    this.miUsuario.correo = this.miUsuario.correo;
-    this.miUsuario.password = this.miUsuario.password;
   }
   rolUsuario: string;
   roles: string[] = ['Estudiante', 'Tutor', 'Jurado'];
@@ -25,6 +25,16 @@ export class RegistrarUsuarioComponent implements OnInit {
   color: ThemePalette = 'primary'
 
   ngOnInit(): void {
+  }
+
+  crearUsuario(){
+    let newUsuario: Usuario={
+      nombre: this.nombre,
+      codigo: this.codigo,
+      correo: this.correo,
+      password: this.password,
+    }
+    console.log(newUsuario);
   }
 
   

@@ -1,5 +1,5 @@
 .general{
-    height: 500px;
+    height: 600px;
     
 }
 .Cabecera{
@@ -10,6 +10,7 @@
     padding: 2% 10%;
     text-align: center;
   }
+
 h1{
     font-size: 60px;
     font-family: fantasy;
@@ -20,10 +21,12 @@ h1{
     border: #3D60B6 3px solid;
     width: 450px;
     position: relative; left: 260px;
+    height: 630px;
 }
 
 .save-compromise{
     text-align: center;
+    position: relative; top: 60px;
 }
 
 .compromise-list{
@@ -31,8 +34,8 @@ h1{
     border: #3D60B6 3px solid;
     width: 418px;
     position: relative; left: 707px;
-    bottom: 592px;
-    height:592px;
+    bottom: 630px;
+    height:630px;
 
 }
 .titulo-list{
@@ -46,3 +49,27 @@ h2{
     font-family: fantasy;
     color:#D0D3D4;
 }
+
+.inputAsunto{
+    position: relative; bottom: 9px;
+    top: 18px;
+   
+}
+
+.inputProyecto{
+    position: relative; bottom: 9px;
+    top: 40px;
+}
+
+.labelTutor{
+    position: relative; top: 60px;
+}
+
+.create-date{
+    position: relative; top: 60px;
+}
+
+.description{
+    position: relative; top: 60px;
+}
+

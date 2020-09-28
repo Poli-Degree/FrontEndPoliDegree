@@ -7,12 +7,12 @@
     
     <div class="registerProyect">
 
-    <form class="proyect-form">
-        <mat-form-field class="title-proyect">
-            <mat-label> Titulo del proyecto: </mat-label>
-            <input matInput>
-        </mat-form-field>
-    </form>
+        <div class="input-titulo-proyecto">
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="titleProyect">
+                <label for="float-input">Titulo del proyecto</label>
+            </span>
+        </div>
 
     <h2>Objetivos:</h2>
     <div class="editor">

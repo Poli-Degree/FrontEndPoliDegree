@@ -1,6 +1,6 @@
 export class Proyect {
     idProyect: number;
-    title: String;
+    titleProyect: String;
     objects: String;
     metodologia: String;
     teorico: String;
