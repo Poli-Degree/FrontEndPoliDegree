@@ -46,7 +46,8 @@
     <div class="rolChoose">El rol escogido es: {{rolUsuario}}</div>
     <br>
     <div class="register-button">
-    <button mat-raised-button color="primary" (click)="crearUsuario()">Regístrate</button>
+        <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
+        <button mat-raised-button color="primary" (click)="crearUsuario()">Regístrate</button>
     </div>
 </div>
 

@@ -25,6 +25,7 @@ import { FormCompromisesComponent } from './form-compromises/form-compromises.co
 import {CalendarModule} from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
 import { TaskFormComponent } from './task-form/task-form.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { TaskFormComponent } from './task-form/task-form.component';
     StudentProfileComponent,
     FormProyectComponent,
     FormCompromisesComponent,
-    TaskFormComponent
+    TaskFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
