@@ -27,6 +27,13 @@ import {InputTextModule} from 'primeng/inputtext';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { HomeComponent } from './home/home.component';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import { MenuComponent } from './menu/menu.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +43,8 @@ import { HomeComponent } from './home/home.component';
     FormProyectComponent,
     FormCompromisesComponent,
     TaskFormComponent,
-    HomeComponent
+    HomeComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +60,11 @@ import { HomeComponent } from './home/home.component';
     ButtonModule,
     EditorModule,
     CalendarModule,
-    InputTextModule
+    InputTextModule,
+    MatToolbarModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule
 
     
   ],
