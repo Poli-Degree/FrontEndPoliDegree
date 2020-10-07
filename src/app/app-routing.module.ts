@@ -7,6 +7,7 @@ import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario
 import { StudentProfileComponent } from './student-profile/student-profile.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
+import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home',pathMatch: 'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'crearTarea', component: TaskFormComponent},
   {path: 'crearCompromiso', component: FormCompromisesComponent},
   {path: 'verPerfil', component: StudentProfileComponent},
-  {path: 'verTareas', component: TasksListComponent}
+  {path: 'verTareas', component: TasksListComponent},
+  {path: 'bienvenida', component: WelcomeViewComponent}
 ];
 
 @NgModule({

@@ -30,6 +30,8 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
 import {MatCardModule} from '@angular/material/card';
 import { TaskComponent } from './task/task.component';
 import {HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import {HttpClientModule } from '@angular/common/http';
     TaskFormComponent,
     HomeComponent,
     TasksListComponent,
-    TaskComponent
+    TaskComponent,
+    LoginComponent,
+    WelcomeViewComponent
   ],
   imports: [
     BrowserModule,

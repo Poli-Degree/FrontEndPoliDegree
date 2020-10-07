@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+.cabecera{
+    border: 1px solid red;
+    padding: 15px;
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    text-align: center;
+ }
+
+ h1 {
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:#D0D3D4;
+}
+
+.Menu{
+    width: 33%;
+    float: right;
+    padding: 10px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 1%;
+    
+}
+
+.contenido{
+    width: 43%;
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 1%;
+
+}
+
+.galeria{
+    width:53%;
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 1%;
+
+}
+
+.banner{
+    width:100%;
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 600px){
+    .contenido{
+        width: 100%;
+    }
+    
+    .galeria{
+        width: 100%;
+    }
+    .Menu{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+    }
+}
+ 
