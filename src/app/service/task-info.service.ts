@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Task } from '../models/task.model';
 
 @Injectable({
@@ -19,15 +20,8 @@ export class TaskInfoService {
   }
 
 
-  getAllTasks() {
+  getAllTasks(): Observable<{data: Task[]}>{
 
-    this.http.get<Task[]>('https://polidegree.herokuapp.com/tasks/1').subscribe (
-      data => {this.tasksService=data;});
-   
-  }
- 
-  bringTasks(): Array<Task> {
-  
-    return this.tasksService;
+  return this.http.get<{data: Task[]}>('https://polidegree.herokuapp.com/tasks/1')
   }
 }

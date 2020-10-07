@@ -21,7 +21,9 @@ export class TasksListComponent implements OnInit {
 
  async fillTasks () {
     
-  this.tasks= this.taskInfoService.bringTasks();
+  this.taskInfoService.getAllTasks().subscribe((task)=> {
+    this.tasks=task.data;
+  });
     
     console.log(this.tasks);
   }
