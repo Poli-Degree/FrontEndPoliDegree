@@ -26,6 +26,14 @@ import {CalendarModule} from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { HomeComponent } from './home/home.component';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import { MenuComponent } from './menu/menu.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 import {MatCardModule} from '@angular/material/card';
 import { TaskComponent } from './task/task.component';
@@ -42,6 +50,7 @@ import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
     FormCompromisesComponent,
     TaskFormComponent,
     HomeComponent,
+    MenuComponent,
     TasksListComponent,
     TaskComponent,
     LoginComponent,
@@ -61,6 +70,11 @@ import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
     ButtonModule,
     EditorModule,
     CalendarModule,
+    InputTextModule,
+    MatToolbarModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
     InputTextModule, 
     MatCardModule,
     HttpClientModule

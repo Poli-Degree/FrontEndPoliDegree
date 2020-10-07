@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Proyect} from '../models/proyect.model';
+import { InfoProyectService } from '../service/info-proyect.service';
 
 @Component({
   selector: 'app-form-proyect',
@@ -8,14 +9,12 @@ import {Proyect} from '../models/proyect.model';
 })
 export class FormProyectComponent implements OnInit {
 
-  titleProyect: string;
-  objects: string;
-  metodologico: string;
-  teorico: string;
-  references: string;
+
+  newProyect: Proyect;
   title: string;
-  constructor() { 
+  constructor(private infoProyectService: InfoProyectService) { 
     this.title = 'Registro proyecto';
+    this.newProyect = new Proyect ();
   }
 
   ngOnInit(): void {
@@ -23,18 +22,8 @@ export class FormProyectComponent implements OnInit {
   }
 
   registrar() {
+    this.infoProyectService.creationProyect(this.newProyect);
 
-    let newProyect: Proyect= {
-      idProyect: 1,
-      titleProyect: this.titleProyect,
-      objects: this.objects,
-      metodologia: this.metodologico,
-      teorico: this.teorico,
-      references: this.references,
-      tutor: 321
-    }
- 
-    console.log(newProyect);
   }
 
 }
