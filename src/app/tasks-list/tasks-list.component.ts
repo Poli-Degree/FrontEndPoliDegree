@@ -19,12 +19,12 @@ export class TasksListComponent implements OnInit {
     this.taskInfoService.getAllTasks();
    }
 
- async fillTasks () {
+  fillTasks () {
     
   this.taskInfoService.getAllTasks().subscribe((task)=> {
     this.tasks=task.data;
+    console.log(this.tasks);
   });
     
-    console.log(this.tasks);
   }
 }

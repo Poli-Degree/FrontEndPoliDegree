@@ -22,6 +22,6 @@ export class TaskInfoService {
 
   getAllTasks(): Observable<{data: Task[]}>{
 
-  return this.http.get<{data: Task[]}>('https://polidegree.herokuapp.com/tasks/1')
+  return this.http.get<{data: Task[]}>('https://polidegree.herokuapp.com/tasks/151')
   }
 }
