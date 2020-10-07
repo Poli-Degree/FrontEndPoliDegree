@@ -1,0 +1,9 @@
+<p>tasks-list</p>
+
+
+<button  (click)="fillTasks()" mat-raised-button color="primary">Buscar</button>
+<div *ngFor= 'let task of tasks'>
+    <app-task [task]="task"></app-task>
+</div>
+
+

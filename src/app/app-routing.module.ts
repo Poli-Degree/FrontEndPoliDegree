@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario.component';
 import { StudentProfileComponent } from './student-profile/student-profile.component';
 import { TaskFormComponent } from './task-form/task-form.component';
+import { TasksListComponent } from './tasks-list/tasks-list.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home',pathMatch: 'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'registrarProyecto', component: FormProyectComponent },
   {path: 'crearTarea', component: TaskFormComponent},
   {path: 'crearCompromiso', component: FormCompromisesComponent},
-  {path: 'verPerfil', component: StudentProfileComponent}
+  {path: 'verPerfil', component: StudentProfileComponent},
+  {path: 'verTareas', component: TasksListComponent}
 ];
 
 @NgModule({

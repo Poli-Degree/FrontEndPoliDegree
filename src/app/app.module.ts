@@ -34,6 +34,10 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
+import { TasksListComponent } from './tasks-list/tasks-list.component';
+import {MatCardModule} from '@angular/material/card';
+import { TaskComponent } from './task/task.component';
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,9 @@ import { MatListModule } from '@angular/material/list';
     FormCompromisesComponent,
     TaskFormComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    TasksListComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +70,10 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    InputTextModule, 
+    MatCardModule,
+    HttpClientModule
 
     
   ],

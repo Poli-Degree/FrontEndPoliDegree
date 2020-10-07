@@ -9,20 +9,24 @@
 
         <div class="input-titulo-proyecto">
             <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [(ngModel)]="titleProyect">
+                <input id="float-input" type="text" pInputText [(ngModel)]="newProyect.title">
                 <label for="float-input">Titulo del proyecto</label>
+            </span>
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="newProyect.idUser">
+                <label for="float-input">IdUser:</label>
             </span>
         </div>
 
     <h2>Objetivos:</h2>
     <div class="editor">
-    <p-editor [(ngModel)]="objects" [style]="{'height':'200px'}"></p-editor>
+    <p-editor [(ngModel)]="newProyect.objects" [style]="{'height':'200px'}"></p-editor>
     </div>
 
     <div>
     <h2>Marco teórico:</h2>
     <div class="editor">
-    <p-editor [(ngModel)]="teorico" [style]="{'height':'200px'}"></p-editor>
+    <p-editor [(ngModel)]="newProyect.teorico" [style]="{'height':'200px'}"></p-editor>
     </div>
     
     
@@ -30,7 +34,7 @@
     
     <h2>Marco metodológico:</h2>
     <div class="editor">
-    <p-editor [(ngModel)]="metodologico" [style]="{'height':'200px'}"></p-editor>
+    <p-editor [(ngModel)]="newProyect.metodologia" [style]="{'height':'200px'}"></p-editor>
     </div>
 
     
@@ -38,7 +42,7 @@
     <div>
     <h2>Referencias:</h2>
     <div class="editor">
-    <p-editor [(ngModel)]="references" [style]="{'height':'200px'}"></p-editor>
+    <p-editor [(ngModel)]="newProyect.references" [style]="{'height':'200px'}"></p-editor>
     </div>
     
     <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Task} from '../models/task.model';
+import { TaskInfoService } from '../service/task-info.service';
 
 @Component({
   selector: 'app-task-form',
@@ -9,33 +10,23 @@ import {Task} from '../models/task.model';
 export class TaskFormComponent implements OnInit {
 
 
+  newTask: Task;
   title: string;
-  creationDate: Date;
-  dateLimit: Date;
-  asunto: string;
-  idProyect: number;
-  description: string;
+  
 
 
-  constructor() { 
+  constructor(private taskInfoService: TaskInfoService) { 
     this.title = 'Mis tareas';
+    this.newTask = new Task();
   }
 
   ngOnInit(): void {
   }
 
   taskCreation () {
-
-    let newTask: Task = {
     
-    asunto: this.asunto,
-    idProyect: this.idProyect,
-    creationDate: this.creationDate,
-    limitDate: this.dateLimit,
-    description: this.description
-    }
-  console.log(newTask);
-  
+    this.taskInfoService.creationTask(this.newTask);
+    
   }
 
 }
