@@ -26,7 +26,10 @@ import {CalendarModule} from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { HomeComponent } from './home/home.component';
-
+import { TasksListComponent } from './tasks-list/tasks-list.component';
+import {MatCardModule} from '@angular/material/card';
+import { TaskComponent } from './task/task.component';
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { HomeComponent } from './home/home.component';
     FormProyectComponent,
     FormCompromisesComponent,
     TaskFormComponent,
-    HomeComponent
+    HomeComponent,
+    TasksListComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +57,9 @@ import { HomeComponent } from './home/home.component';
     ButtonModule,
     EditorModule,
     CalendarModule,
-    InputTextModule
+    InputTextModule, 
+    MatCardModule,
+    HttpClientModule
 
     
   ],

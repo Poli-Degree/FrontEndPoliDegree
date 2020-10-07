@@ -1,0 +1,8 @@
+<p>tasks-list</p>
+
+<button (click)="fillTasks()">Buscar</button>
+<div *ngFor= 'let task of tasks.data'>
+    <app-task [task]="task"></app-task>
+</div>
+
+
