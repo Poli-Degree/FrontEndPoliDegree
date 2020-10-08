@@ -1,26 +1,28 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
-    <app-menu></app-menu>
+    <!--<app-menu></app-menu>-->
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
 
     <div class="compromise-info">
-
-        <label for="labelCompromise-id">Compromiso id: </label>
-        <label for="labelCompromise-id">001</label>
+        <div class="labels-compromises">
+            <label for="labelCompromise-id">Compromiso id: </label>
+            <label for="labelCompromise-id">001</label>
+        </div>
 
         <div class="inputAsunto">
-        <span class="p-float-label">
-            <input id="float-input" type="text" pInputText [(ngModel)]="asuntoCompromiso"> 
-            <label for="float-input">Asunto del compromiso</label>
-        </span>
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="asuntoCompromiso"> 
+                <label for="float-input">Asunto del compromiso</label>
+            </span>
         </div>
 
         <div class="inputProyecto">
-        <span class="p-float-label">
-            <input id="float-input" type="text" pInputText [(ngModel)]="idProyect"> 
-            <label for="float-input">Proyecto ID</label>  
-        </span>
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="idProyect"> 
+                <label for="float-input">Proyecto ID</label>  
+            </span>
         </div>
 
         <p class="labelTutor">
@@ -41,17 +43,9 @@
         <br>
 
         <div class="save-compromise">
-            <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
             <button mat-raised-button color="primary" (click)="crearCompromiso()">Crear compromiso </button>
+            <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
         </div>
-
-    </div>
-
-    <div class="compromise-list">
-        <div class="titulo-list">
-            <h2>Compromisos creados</h2>
-        </div>
-        <label for="compromiso1">Compromiso 26/08.pdf</label>
 
     </div>
 </div>

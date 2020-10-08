@@ -1,5 +1,6 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
-    <app-menu></app-menu>
+    <!--<app-menu></app-menu>-->
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
@@ -10,6 +11,9 @@
         </div>
         <div class="image">
             <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="ProfilePicture" width="250" height="200">
+        </div>
+        <div class="update-picture">
+            <button mat-raised-button color="primary">Actualizar foto</button>
         </div>
             <p>
             <label for="nombreLabel">Nombre: </label>
@@ -23,9 +27,6 @@
             <label for="tutorLabel">Tutor: </label>
             <label for="tutor"> Juan Carlos Prieto</label>
         </p>
-        <div class="update-picture">
-            <button mat-raised-button color="primary">Actualizar foto</button>
-        </div>
     </div>
     
     <div class="procesos">
@@ -57,10 +58,8 @@
 
             <div class="tasks-button">
                 <button [routerLink]="['/verTareas']" mat-raised-button color="primary">Mis tareas</button>
-    
             </div>
         </div>
-        <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
-    
+    <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
     </div>
 </div>

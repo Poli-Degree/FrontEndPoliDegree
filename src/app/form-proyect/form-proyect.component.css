@@ -1,18 +1,17 @@
-.general{
-    height: 500px;
-    
-    }
+*{
+  box-sizing: border-box;
+}
     .Cabecera{
-      width: 1000px;
-      position: relative; left: 300px;
+      width: 100%;
       background: rgb(0,236,255);
       background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
       padding: 2% 10%;
       text-align: center;
     }
     h1{
-      font-size: 60px;
-      font-family: fantasy;
+      font-size: xx-large;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
       color:#D0D3D4;
     }
 
@@ -20,38 +19,49 @@
       font-size: 30px;
       font-family: fantasy;
       color: #2A4076;
-    }
-    .proyect-form {
-      min-width: 150px;
-      max-width: 500px;
-      width: 100%;
-    }
-    
-    .registerProyect{
-      margin-left: 350px;
-      margin-top: 50px;
+      text-align: center;
     }
 
-    .objects-proyect {
-      width: 100%;
-    }
+    .infoProyect{
+      width: 98%;
+      padding: 5px;
+      padding: 0 1rem;
+      margin: 1rem; 
+  }
 
-    .title-proyect {
-      width: 150%;
-    }
-
+  .registerProyect{
+      width: 98%;
+      padding: 5px;
+      padding: 0 1rem;
+      margin: 1rem; 
+  }
+  
   .editor{
-    margin-bottom: 20px;
-    max-width: 900px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border:#3D60B6 5px solid;
-    
   }
 
   .input-titulo-proyecto{
-    position: relative; left: 350px;
-
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 
-  .p-float-label{
-    margin: 3%;
+  .input-id-proyecto{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
+  .buttons{
+    text-align: center;
+  }
+
+ 

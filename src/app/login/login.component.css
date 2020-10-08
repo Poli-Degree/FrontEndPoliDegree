@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+.cabecera{
+    width: 100%;
+    border: 1px solid red;
+    padding: 2% 10%;
+    margin-bottom: 1.5%;
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    text-align: center;
+ }
+
+ h1 {
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:#D0D3D4;
+}
+
+.contenido{
+    width: 100%;
+    border: 1px solid red;
+    float: left;
+    padding: 5px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.banner{
+    width:100%;
+    float: left;
+    height: 37%;
+    padding: 10px;
+    border: 1px solid red;
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+    .contenido{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+    }
+}

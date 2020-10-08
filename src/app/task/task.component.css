@@ -1,9 +1,16 @@
 .tasks {
-    max-width: 10%;
-    margin-bottom: 5%;
-    max-width: 40%;
-    border:#3D60B6 5px solid;
-    margin-left:  25%;
-  }
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border:#3D60B6 5px solid;
+}
+
+.target-task{
+  width: 98%;
+  padding: 0 1rem;
+  margin: 1rem;
+}
   
  

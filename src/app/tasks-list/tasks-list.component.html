@@ -1,9 +1,15 @@
-<p>tasks-list</p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="Cabecera">
+        <h1 class="center">Tareas creadas</h1>
+    </div>
 
-
-<button  (click)="fillTasks()" mat-raised-button color="primary">Buscar</button>
-<div *ngFor= 'let task of tasks'>
-    <app-task [task]="task"></app-task>
+    <div class="button">
+        <button  (click)="fillTasks()" mat-raised-button color="primary">Mostrar Tareas</button>
+        <div *ngFor= 'let task of tasks'>
+            <app-task [task]="task"></app-task>
+        </div>
+    </div>
 </div>
 
 
