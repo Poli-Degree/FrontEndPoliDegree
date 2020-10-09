@@ -2,6 +2,12 @@
     height: 500px;
     
     }
+    .editores{
+      width: 800px;
+      position: relative; left: 400px;
+      font-size: 50px;
+      height: 403px;
+  }
     .Cabecera{
       width: 1000px;
       position: relative; left: 300px;

@@ -41,6 +41,7 @@ import {HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,8 @@ import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
     TasksListComponent,
     TaskComponent,
     LoginComponent,
-    WelcomeViewComponent
+    WelcomeViewComponent,
+    
   ],
   imports: [
     BrowserModule,

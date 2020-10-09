@@ -1,5 +1,7 @@
+<app-menu>
 <div class="general">
-    <app-menu></app-menu>
+
+    
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
@@ -18,29 +20,23 @@
                 <label for="float-input">IdUser:</label>
             </span>
         </div>
-
+    </div>    
+    <div class="editores">
     <h2>Objetivos:</h2>
     <div class="editor">
-    <p-editor [(ngModel)]="newProyect.objects" [style]="{'height':'200px'}"></p-editor>
+        <p-editor [(ngModel)]="newProyect.objects" [style]="{'height':'200px'}"></p-editor>
     </div>
 
-    <div>
     <h2>Marco teórico:</h2>
     <div class="editor">
-    <p-editor [(ngModel)]="newProyect.teorico" [style]="{'height':'200px'}"></p-editor>
-    </div>
-    
-    
-    
+        <p-editor [(ngModel)]="newProyect.teorico" [style]="{'height':'200px'}"></p-editor>
+    </div>    
     
     <h2>Marco metodológico:</h2>
     <div class="editor">
-    <p-editor [(ngModel)]="newProyect.metodologia" [style]="{'height':'200px'}"></p-editor>
+        <p-editor [(ngModel)]="newProyect.metodologia" [style]="{'height':'200px'}"></p-editor>
     </div>
 
-    
-
-    <div>
     <h2>Referencias:</h2>
     <div class="editor">
     <p-editor [(ngModel)]="newProyect.references" [style]="{'height':'200px'}"></p-editor>
@@ -48,9 +44,7 @@
     
     <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
     <button mat-raised-button (click)="registrar()" color="primary">Registrar</button>
-    
-
-    
     </div>
+</div>
     
-    
+</app-menu>
