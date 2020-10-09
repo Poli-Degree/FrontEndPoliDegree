@@ -4,7 +4,7 @@
 
 .cabecera{
     border: 1px solid red;
-    padding: 15px;
+    padding: 2% 10%;
     background: rgb(0,236,255);
     background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
     text-align: center;

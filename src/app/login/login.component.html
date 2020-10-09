@@ -1,3 +1,36 @@
-<div class="cabecera">
-    <h1>INICIA SESION</h1>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="cabecera">
+        <h1>INICIA SESION</h1>
+    </div>
+
+    <div class="contenido">
+        <div class="username-input">
+            <mat-form-field class="example-full-width">
+              <mat-label>Ingresa tu usuario</mat-label>
+              <input matInput>
+            </mat-form-field>
+        </div>
+    
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+            <mat-label>Ingresa tu contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            </mat-form-field>
+        </div>
+
+        <button mat-raised-button color="primary" [style]="{'margin':'1%'}">Iniciar sesión</button>
+        <br>
+        <button mat-raised-button color="primary" [routerLink]="['/bienvenida']" [style]="{'margin':'1%'}">Atrás</button>
+        <br>
+    </div>
+
+    <div class="banner">
+        Banner.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iure natus voluptates doloremque ab expedita eos facere at cumque sint maiores dolores, dicta praesentium ipsum beatae earum exercitationem! 
+        Odit, incidunt non?
+    </div>
+

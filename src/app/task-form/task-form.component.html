@@ -1,56 +1,49 @@
 <app-menu>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
-    
+    <!--<app-menu></app-menu>-->
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
 
     <div class="task-info">
-        <label for="labelTask-id">Tarea id: </label>
-        <label for="task-id"></label>
-    
 
-
-    <div class="input-id-proyecto">
-        <span class="p-float-label">
-            <input id="float-input" type="number" pInputText [(ngModel)]="newTask.idProyect">
-            <label for="float-input">Proyecto ID</label>
-        </span>
-    </div>
-
-    <div class="create-date">
-        <label for="icon">Fecha de creacion: </label>
-        <br>
-        <p-calendar [(ngModel)]="newTask.creationDate" [showIcon]="true" inputId="icon"></p-calendar>
-    </div>
-        
-    <div class="limit-date">
-        <label for="icon">Fecha limite: </label>
-        <br>
-        <p-calendar [(ngModel)]="newTask.limitDate" [showIcon]="true" inputId="icon"></p-calendar>
-    </div>
-    <br>
-
-    <div class="description">
-        <label for="description">Describe tu tarea: </label>
-        <p-editor [style]="{'height':'200px'}" [(ngModel)]="newTask.description"></p-editor>
-    </div>
-    <br>
-
-    <div class="save-task">
-        <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
-        <button  (click)="taskCreation()" mat-raised-button color="primary">Crear tarea </button>
-    </div>
-
-    <div class="task-list">
-        <div class="titulo-list">
-            <h2>Tareas creadas</h2>
+        <div class="label-tasks">
+            <label for="labelTask-id">Tarea id: </label>
+            <label for="task-id"></label>
         </div>
-        <label for="Tarea1">Tarea 28/08.pdf</label>
+    
+        <div class="input-id-proyecto">
+            <span class="p-float-label">
+                <input id="float-input" type="number" pInputText [(ngModel)]="newTask.idProyect">
+                <label for="float-input">Proyecto ID</label>
+            </span>
+        </div>
 
-        {{newTask.description}}
-        <div [innerHtml]="newTask.description"></div>
-    </div>
+        <div class="create-date">
+            <label for="icon">Fecha de creacion: </label>
+            <br>
+            <p-calendar [(ngModel)]="newTask.creationDate" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+        
+        <div class="limit-date">
+            <label for="icon">Fecha limite: </label>
+            <br>
+            <p-calendar [(ngModel)]="newTask.limitDate" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+        <br>
+
+        <div class="description">
+            <label for="description">Describe tu tarea: </label>
+            <p-editor [style]="{'height':'200px'}" [(ngModel)]="newTask.description"></p-editor>
+        </div>
+        <br>
+
+        <div class="save-task">
+            <button  (click)="taskCreation()" mat-raised-button color="primary">Crear tarea </button>
+            <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
+        </div>
+
     </div>
 </div>
 </app-menu>

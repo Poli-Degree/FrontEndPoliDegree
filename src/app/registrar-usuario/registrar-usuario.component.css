@@ -1,19 +1,20 @@
-.general{
-height: 500px;
-
+*{
+  box-sizing: border-box;
 }
+
+
 .Cabecera{
-  width: 865px;
-  position: relative; left: 260px;
+  width: 100%;
   background: rgb(0,236,255);
   background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
   padding: 2% 10%;
   text-align: center;
 }
 h1{
-  font-size: 60px;
-  font-family: fantasy;
-  color:#D0D3D4;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:#D0D3D4;
 }
 
 .example-radio-group {
@@ -32,41 +33,67 @@ h1{
   width: 100%;
 }
 
-.example-container{
-  position: relative; left: 620px;
-  top: 110px;
+.register-button{
+  text-align: center;
+  
 }
 
 .rolBox{
-  position: relative; left: 620px;
-  top: 110px;
-
-}
-
-.rolChoose{
-  position: relative; left: 620px;
-  top: 110px;
-
-}
-
-.register-button{
-  margin-left: 80px;
-  position: relative; left: 610px;
-  top: 110px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input-nombre-registro{
-  position: relative; left: 620px;
-  top: 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .input-codigo-registro{
-  position: relative; left: 620px;
-  top: 60px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .input-correo-registro{
-  position: relative; left: 620px;
-  top: 90px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+
+.example-container{
+  text-align: center;
+}
+
+.contenido-inputs{
+    width: 98%;
+    padding: 5px;
+    padding: 0 1rem;
+    margin: 1rem; 
+}
+
+.contenido-buttons{
+    width: 98%;
+    padding: 0 1rem;
+    margin: 1rem; 
+
+}
+
+@media only screen and (max-width: 500px){
+  .contenido-inputs{
+      width: 100%;
+  }
+
+  .contenido-buttons{
+    width: 100%;
+}
 }
 

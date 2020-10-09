@@ -1,20 +1,24 @@
 <app-menu>
-<div class="general">
+
 
     
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <!--<app-menu></app-menu>-->
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
     <br>  
-   
-    
-    <div class="registerProyect">
 
+    <div class="infoProyect">
         <div class="input-titulo-proyecto">
             <span class="p-float-label">
                 <input id="float-input" type="text" pInputText [(ngModel)]="newProyect.title">
                 <label for="float-input">Titulo del proyecto</label>
             </span>
+        </div>
+
+        <div class="input-id-proyecto">
             <span class="p-float-label">
                 <input id="float-input" type="text" pInputText [(ngModel)]="newProyect.idUser">
                 <label for="float-input">IdUser:</label>

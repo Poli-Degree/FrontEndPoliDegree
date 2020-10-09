@@ -55,7 +55,7 @@ import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
     TasksListComponent,
     TaskComponent,
     LoginComponent,
-    WelcomeViewComponent,
+    WelcomeViewComponent
     
   ],
   imports: [

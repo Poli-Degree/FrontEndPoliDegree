@@ -9,7 +9,7 @@ import {ThemePalette} from '@angular/material/core';
 })
 export class RegistrarUsuarioComponent implements OnInit {
   title: string;
-  nombre: string;
+  username: string;
   codigo: number;
   correo: string;
   password: string;
@@ -29,7 +29,7 @@ export class RegistrarUsuarioComponent implements OnInit {
 
   crearUsuario(){
     let newUsuario: Usuario={
-      nombre: this.nombre,
+      username: this.username,
       codigo: this.codigo,
       correo: this.correo,
       password: this.password,
