@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../models/user.model';
 import {ThemePalette} from '@angular/material/core';
+import { UserInfoService } from '../service/user-info.service';
 
 @Component({
   selector: 'app-registrar-usuario',
@@ -8,16 +9,12 @@ import {ThemePalette} from '@angular/material/core';
   styleUrls: ['./registrar-usuario.component.css']
 })
 export class RegistrarUsuarioComponent implements OnInit {
+ 
   title: string;
-  username: string;
-  codigo: number;
-  correo: string;
-  password: string;
-  favoriteSeason: string;
-  seasons: string[];
-
-  constructor() { 
+  newUser: Usuario;
+  constructor(private userInfoService: UserInfoService) { 
     this.title = 'Registro Poli Degree';
+    this.newUser = new Usuario ();
   }
   rolUsuario: string;
   roles: string[] = ['Estudiante', 'Tutor', 'Jurado'];
@@ -28,16 +25,12 @@ export class RegistrarUsuarioComponent implements OnInit {
   }
 
   crearUsuario(){
-    let newUsuario: Usuario={
-      username: this.username,
-      codigo: this.codigo,
-      correo: this.correo,
-      password: this.password,
-    }
-    console.log(newUsuario);
+    
+    this.userInfoService.createUser(this.newUser);
+   }
   }
 
   
 
 
-}
+

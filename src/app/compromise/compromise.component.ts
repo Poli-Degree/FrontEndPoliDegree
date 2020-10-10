@@ -18,6 +18,6 @@ export class CompromiseComponent implements OnInit {
   ngOnInit(): void {
   }
   chooseCompromiseStatus() {
-    this.compromiseStatus = 'Compromiso Terminada';
+    this.compromiseStatus = 'Compromiso Terminado';
   }
 }

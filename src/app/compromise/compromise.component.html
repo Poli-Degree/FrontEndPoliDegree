@@ -1,10 +1,11 @@
 <div class="target-compromise">
     <mat-card class="compromises">
-        <mat-card-header>
-          <mat-card-title>{{compromiseStatus}}</mat-card-title>
-          <i class="pi pi-bookmark" style="font-size: 2rem"></i>
+        
+          <mat-card-title>{{compromiseStatus}}
+            <i class="pi pi-bookmark" style="font-size: 2rem"></i>
+          </mat-card-title>
           <mat-card-subtitle>Fecha de creacion: {{compromise.creationDate}}</mat-card-subtitle>
-        </mat-card-header>
+        
         <mat-card-content>
           <div [innerHtml]="compromise.description"></div>
         </mat-card-content>

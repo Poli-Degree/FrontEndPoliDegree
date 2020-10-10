@@ -6,29 +6,22 @@
     <div class="contenido-inputs">
         <div class="input-nombre-registro">
             <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [(ngModel)]="username">
-                <label for="float-input">Ingresa tu nombre</label>
-            </span>
-        </div>
-
-        <div class="input-codigo-registro">
-            <span class="p-float-label">
-                <input id="float-input" type="number" pInputText [(ngModel)]="codigo">
-                <label for="float-input">Ingresa tu codigo</label>
+                <input id="float-input" type="text" pInputText [(ngModel)]="newUser.username">
+                <label for="float-input">Ingresa tu nombre de usuario:</label>
             </span>
         </div>
 
         <div class="input-correo-registro">
             <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [(ngModel)]="correo">
-                <label for="float-input">Ingresa tu correo</label>
+                <input id="float-input" type="text" pInputText [(ngModel)]="newUser.email">
+                <label for="float-input">Ingresa tu correo:</label>
             </span>
         </div>
 
         <div class="example-container">
             <mat-form-field appearance="fill">
-            <mat-label>Ingresa tu contraseña</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+            <mat-label>Ingresa tu contraseña:</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="newUser.password">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
@@ -38,13 +31,13 @@
 
     <div class="contenido-buttons">
         <div class="rolBox">
-            <label id="example-radio-group-label">Elige tu rol</label>
-            <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="rolUsuario">
+            <label id="example-radio-group-label">Elige tu rol:</label>
+            <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="newUser.usertype">
             <mat-radio-button class="example-radio-button" *ngFor="let rol of roles" [value]="rol" [color]="color">
             {{rol}}
             </mat-radio-button>
             </mat-radio-group>
-            <div class="rolChoose">El rol escogido es: {{rolUsuario}}</div>
+            <div class="rolChoose">El rol escogido es: {{newUser.usertype}}</div>
         </div>
     </div>
 

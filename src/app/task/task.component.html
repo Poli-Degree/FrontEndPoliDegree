@@ -1,11 +1,12 @@
 <div class="target-task">
 <mat-card class="tasks">
-    <mat-card-header>
-      <mat-card-title>{{taskStatus}}</mat-card-title>
-      <i class="pi pi-bookmark" style="font-size: 2rem"></i>
+    
+      <mat-card-title>{{taskStatus}}
+        <i class="pi pi-bookmark" style="font-size: 2rem"></i>
+      </mat-card-title>
       <mat-card-subtitle>Fecha de creacion: {{task.creationDate}}</mat-card-subtitle>
       <mat-card-subtitle>Fecha limite: {{task.limitDate}}</mat-card-subtitle>
-    </mat-card-header>
+    
     <mat-card-content>
       <div [innerHtml]="task.description"></div>
     </mat-card-content>
