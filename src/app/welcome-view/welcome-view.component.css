@@ -3,7 +3,7 @@
 }
 
 .cabecera{
-    border: 1px solid red;
+    
     padding: 2% 10%;
     background: rgb(0,236,255);
     background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
@@ -21,7 +21,6 @@
     width: 33%;
     float: right;
     padding: 10px;
-    border: 1px solid red;
     text-align: center;
     margin: 1%;
     
@@ -31,7 +30,6 @@
     width: 43%;
     float: left;
     padding: 10px;
-    border: 1px solid red;
     margin: 1%;
 
 }
@@ -40,7 +38,6 @@
     width:53%;
     float: left;
     padding: 10px;
-    border: 1px solid red;
     margin: 1%;
 
 }
@@ -49,7 +46,6 @@
     width:100%;
     float: left;
     padding: 10px;
-    border: 1px solid red;
     background: rgb(0,236,255);
     background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
     text-align: center;
