@@ -4,5 +4,6 @@ export class Compromise{
     idProyect: number;
     description: string;
     dateCreate: Date;
+    limitDate: Date;
     tutor: string;
 }

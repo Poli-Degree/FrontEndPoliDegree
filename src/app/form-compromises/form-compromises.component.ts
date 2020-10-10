@@ -12,6 +12,7 @@ export class FormCompromisesComponent implements OnInit {
   idProyect: number;
   description: string;
   dateCreate: Date;
+  limitDate: Date;
   tutor: string;
   asuntoCompromiso: string;
 
@@ -31,11 +32,9 @@ export class FormCompromisesComponent implements OnInit {
       idProyect: this.idProyect,
       description: this.description,
       dateCreate: this.dateCreate,
+      limitDate: this.limitDate,
       tutor: this.tutor
     }
     console.log(newCompromise);
   }
-
-  
-
 }

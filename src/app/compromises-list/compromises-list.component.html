@@ -1,0 +1,13 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="Cabecera">
+        <h1 class="center">Compromisos creadas</h1>
+    </div>
+
+    <div class="button">
+        <button  (click)="fillCompromises()" mat-raised-button color="primary">Mostrar Compromisos</button>
+        <div *ngFor= 'let compromise of compromises'>
+            <app-compromise [compromise]="compromise"></app-compromise>
+        </div>
+    </div>
+</div>

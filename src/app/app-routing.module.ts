@@ -9,6 +9,7 @@ import { StudentProfileComponent } from './student-profile/student-profile.compo
 import { TaskFormComponent } from './task-form/task-form.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
+import { CompromisesListComponent } from './compromises-list/compromises-list.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home',pathMatch: 'full'},
@@ -20,7 +21,9 @@ const routes: Routes = [
   {path: 'verPerfil', component: StudentProfileComponent},
   {path: 'verTareas', component: TasksListComponent},
   {path: 'bienvenida', component: WelcomeViewComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+
+  {path: 'verCompromisos', component: CompromisesListComponent}
 ];
 
 @NgModule({
