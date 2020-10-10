@@ -12,34 +12,22 @@
             <label for="labelCompromise-id">001</label>
         </div>
 
-        <div class="inputAsunto">
-            <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [(ngModel)]="asuntoCompromiso"> 
-                <label for="float-input">Asunto del compromiso</label>
-            </span>
-        </div>
-
         <div class="inputProyecto">
             <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [(ngModel)]="idProyect"> 
+                <input id="float-input" type="text" pInputText [(ngModel)]="newCompromiso.idProyect"> 
                 <label for="float-input">Proyecto ID</label>  
             </span>
         </div>
 
-        <p class="labelTutor">
-            <label for="tutorLabel">Tutor: </label>
-            <label for="tutor"> {{tutor}}</label>
-        </p>
-
         <div class="create-date">
             <label for="icon">Fecha de creacion: </label>
-            <p-calendar [(ngModel)]="dateCreate" [showIcon]="true" inputId="icon"></p-calendar>
+            <p-calendar [(ngModel)]="newCompromiso.creationDate" [showIcon]="true" inputId="icon"></p-calendar>
         </div>
         <br>
 
         <div class="description">
             <label>Describe tu compromiso: </label>
-            <p-editor [(ngModel)]="description" [style]="{'height':'200px'}"></p-editor >
+            <p-editor [(ngModel)]="newCompromiso.description" [style]="{'height':'200px'}"></p-editor >
         </div>
         <br>
 

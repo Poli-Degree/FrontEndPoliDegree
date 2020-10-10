@@ -6,8 +6,10 @@ import { Compromise } from '../models/compromise.model';
   styleUrls: ['./compromise.component.css']
 })
 export class CompromiseComponent implements OnInit {
+  
   @Input()
   compromise: Compromise;
+  
   compromiseStatus: string;
   constructor() { 
     this.compromiseStatus = 'Compromiso Pendiente';

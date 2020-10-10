@@ -1,9 +1,6 @@
 export class Compromise{
-    idCompromise: number;
-    asuntoCompromiso: string;
     idProyect: number;
     description: string;
-    dateCreate: Date;
-    limitDate: Date;
+    creationDate: Date;
     tutor: string;
 }
