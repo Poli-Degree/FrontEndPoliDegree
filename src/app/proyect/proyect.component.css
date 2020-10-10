@@ -1,0 +1,18 @@
+.proyects {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border:#3D60B6 5px solid;
+    text-align: left;
+  }
+  
+  .target-proyect{
+    width: 98%;
+    padding: 0 1rem;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }

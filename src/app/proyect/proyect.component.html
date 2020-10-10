@@ -1,0 +1,20 @@
+<div class="target-proyects">
+<mat-card class="proyects">
+    
+<mat-card-title>{{proyect.title}}</mat-card-title>
+    
+    <mat-card-content>
+      <mat-card-subtitle>Objetivos: </mat-card-subtitle>
+      <div [innerHtml]="proyect.objects"></div>
+      <mat-card-subtitle>Marco metodologico:</mat-card-subtitle>
+      <div [innerHtml]="proyect.metodologia"></div>
+      <mat-card-subtitle>Marco Teorico:</mat-card-subtitle>
+      <div [innerHtml]="proyect.teorico"></div>
+      <mat-card-subtitle>Referencias:</mat-card-subtitle>
+      <div [innerHtml]="proyect.references"></div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Modificar</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

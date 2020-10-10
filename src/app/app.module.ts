@@ -42,6 +42,8 @@ import { LoginComponent } from './login/login.component';
 import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
 import { CompromiseComponent } from './compromise/compromise.component';
 import { CompromisesListComponent } from './compromises-list/compromises-list.component';
+import { ProyectListComponent } from './proyect-list/proyect-list.component';
+import { ProyectComponent } from './proyect/proyect.component';
 
 
 @NgModule({
@@ -59,7 +61,9 @@ import { CompromisesListComponent } from './compromises-list/compromises-list.co
     LoginComponent,
     WelcomeViewComponent,
     CompromiseComponent,
-    CompromisesListComponent
+    CompromisesListComponent,
+    ProyectListComponent,
+    ProyectComponent
     
   ],
   imports: [
