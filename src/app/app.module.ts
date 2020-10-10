@@ -40,6 +40,8 @@ import { TaskComponent } from './task/task.component';
 import {HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
+import { CompromiseComponent } from './compromise/compromise.component';
+import { CompromisesListComponent } from './compromises-list/compromises-list.component';
 
 
 @NgModule({
@@ -55,7 +57,9 @@ import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
     TasksListComponent,
     TaskComponent,
     LoginComponent,
-    WelcomeViewComponent
+    WelcomeViewComponent,
+    CompromiseComponent,
+    CompromisesListComponent
     
   ],
   imports: [

@@ -25,6 +25,5 @@ export class TasksListComponent implements OnInit {
     this.tasks=task.data;
     console.log(this.tasks);
   });
-    
   }
 }
