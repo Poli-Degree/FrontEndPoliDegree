@@ -1,11 +1,13 @@
+<!-- Muestra la lista de proyectos creados-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
     <div class="Cabecera">
         <h1 class="center">Proyectos</h1>
     </div>
-
+     <!-- button que muestra los proyetos-->
     <div class="button">
         <button  (click)="fillProyects()" mat-raised-button color="primary">Mostrar Proyectos</button>
+        <!--recorre los proyectos creados-->
         <div *ngFor= 'let proyect of proyects'>
             <app-proyect [proyect]="proyect"></app-proyect>
         </div>

@@ -1,11 +1,13 @@
+<!-- Muestra la lista de tareas creadas-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
     <div class="Cabecera">
         <h1 class="center">Tareas creadas</h1>
     </div>
-
+    <!-- button que muestra las tareas-->
     <div class="button">
         <button  (click)="fillTasks()" mat-raised-button color="primary">Mostrar Tareas</button>
+        <!--recorre las tareas creados-->
         <div *ngFor= 'let task of tasks'>
             <app-task [task]="task"></app-task>
         </div>

@@ -1,3 +1,4 @@
+<app-menu2>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="cabecera">
         <h1>INICIA SESION</h1>
@@ -21,7 +22,7 @@
             </mat-form-field>
         </div>
 
-        <button mat-raised-button color="primary" [style]="{'margin':'1%'}">Iniciar sesión</button>
+        <button mat-raised-button color="primary" [routerLink]="['/verPerfil']" [style]="{'margin':'1%'}">Iniciar sesión</button>
         <br>
         <button mat-raised-button color="primary" [routerLink]="['/bienvenida']" [style]="{'margin':'1%'}">Atrás</button>
         <br>
@@ -34,3 +35,4 @@
         Odit, incidunt non?
     </div>
 
+</app-menu2>

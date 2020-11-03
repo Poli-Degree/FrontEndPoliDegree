@@ -11,6 +11,7 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
 import { CompromisesListComponent } from './compromises-list/compromises-list.component';
 import { ProyectListComponent } from './proyect-list/proyect-list.component';
+import { TutorProfileComponent } from './tutor-profile/tutor-profile.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home',pathMatch: 'full'},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'bienvenida', component: WelcomeViewComponent},
   {path: 'login', component: LoginComponent},
   {path: 'verCompromisos', component: CompromisesListComponent},
-  {path: 'misProyectos', component: ProyectListComponent}
+  {path: 'misProyectos', component: ProyectListComponent},
+  {path: 'verPerfilTutor', component: TutorProfileComponent}
 ];
 
 @NgModule({

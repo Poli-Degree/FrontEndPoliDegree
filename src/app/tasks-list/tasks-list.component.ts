@@ -8,17 +8,19 @@ import { TaskInfoService } from '../service/task-info.service';
   styleUrls: ['./tasks-list.component.css']
 })
 export class TasksListComponent implements OnInit {
-
+  /**
+   * Lista de proyectos 
+   */
   tasks: Array<Task>; 
-
+  /**el constructor invoca una lista de tipo Task */
   constructor(private taskInfoService: TaskInfoService) {
     this.tasks = new Array <Task> ();
    }
-
+   /**obtiene los tareas */
    ngOnInit(): void {
     this.taskInfoService.getAllTasks();
    }
-
+   /**Funcion de llenado de tareas */
   fillTasks () {
     
   this.taskInfoService.getAllTasks().subscribe((task)=> {

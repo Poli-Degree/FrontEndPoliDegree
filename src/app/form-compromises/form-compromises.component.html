@@ -1,36 +1,38 @@
+<!-- Formulario para crear compromisos-->
 <app-menu>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
-    <!--<app-menu></app-menu>-->
+    
     <div class="Cabecera">
         <h1 class="center">{{ title }}</h1>
     </div>
 
     <div class="compromise-info">
+        <!-- label del compromiso-->
         <div class="labels-compromises">
             <label for="labelCompromise-id">Compromiso id: </label>
             <label for="labelCompromise-id">001</label>
         </div>
-
+        <!--input del id del proyecto-->
         <div class="inputProyecto">
             <span class="p-float-label">
                 <input id="float-input" type="text" pInputText [(ngModel)]="newCompromiso.idProyect"> 
                 <label for="float-input">Proyecto ID</label>  
             </span>
         </div>
-
+        <!--calendario para fecha de creacion-->
         <div class="create-date">
             <label for="icon">Fecha de creacion: </label>
             <p-calendar [(ngModel)]="newCompromiso.creationDate" [showIcon]="true" inputId="icon"></p-calendar>
         </div>
         <br>
-
+        <!-- Ingresar descripcion del compromiso-->
         <div class="description">
             <label>Describe tu compromiso: </label>
             <p-editor [(ngModel)]="newCompromiso.description" [style]="{'height':'200px'}"></p-editor >
         </div>
         <br>
-
+        <!--button guardar compromiso-->
         <div class="save-compromise">
             <button mat-raised-button color="primary" (click)="crearCompromiso()">Crear compromiso </button>
             <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>

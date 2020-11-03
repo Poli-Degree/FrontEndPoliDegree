@@ -8,15 +8,18 @@ import { Compromise } from '../models/compromise.model';
 export class CompromiseComponent implements OnInit {
   
   @Input()
+  /** parameter compromise: de tipo modelo Compromise  */
   compromise: Compromise;
   
   compromiseStatus: string;
+  /**constructor con estado del compromiso pendiente */
   constructor() { 
     this.compromiseStatus = 'Compromiso Pendiente';
   }
 
   ngOnInit(): void {
   }
+  /** funcion para cambiar estado a terminado */
   chooseCompromiseStatus() {
     this.compromiseStatus = 'Compromiso Terminado';
   }

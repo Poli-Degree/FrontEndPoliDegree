@@ -8,16 +8,20 @@ import { CompromiseInfoService } from '../service/compromise-info.service';
   styleUrls: ['./compromises-list.component.css']
 })
 export class CompromisesListComponent implements OnInit {
+  /**
+   * Lista de compromisos 
+   */
   compromises: Array<Compromise>; 
-
+  /**el constructor invoca una lista de tipo Comprmise */
   constructor(private compromiseInfoService: CompromiseInfoService) {
     this.compromises = new Array <Compromise> ();
    }
-
+  /**obtiene los compromisos */
    ngOnInit(): void {
     this.compromiseInfoService.getAllCompromises();
    }
 
+  /**Funcion de llenado de compromisos */
   fillCompromises () {
     
   this.compromiseInfoService.getAllCompromises().subscribe((compromise)=> {

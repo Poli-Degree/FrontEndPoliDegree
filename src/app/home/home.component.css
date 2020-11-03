@@ -1,12 +1,74 @@
-.Menu {
-    padding-left: 40%;
-    padding-top: 5%;
-    margin: 10px;
+*{
+    box-sizing: border-box;
 }
- h1 {
-     font-size: xx-large;
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     text-align: center;
+
+.cabecera{
+    
+    padding: 2% 10%;
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    text-align: center;
  }
 
+ h1 {
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:#D0D3D4;
+}
+h2{
+    color: black;
+}
+.Menu{
+    width: 100%;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    margin: 1%;
+    
+}
+
+.contenido{
+    width: 43%;
+    float: left;
+    padding: 10px;
+    margin: 1%;
+
+}
+
+.objetivos{
+    width:53%;
+    float: left;
+    padding: 10px;
+    margin: 1%;
+
+}
+
+.banner{
+    width:100%;
+    float: left;
+    padding: 10px;
+    background: rgb(0,236,255);
+    background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    color: white;
+
+}
+
+@media only screen and (max-width: 600px){
+    .contenido{
+        width: 100%;
+    }
+    
+    .objetivos{
+        width: 100%;
+    }
+    .Menu{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+    }
+}
+ 
  

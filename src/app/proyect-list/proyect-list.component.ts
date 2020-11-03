@@ -9,17 +9,19 @@ import { InfoProyectService } from '../service/info-proyect.service';
 })
 export class ProyectListComponent implements OnInit {
 
-
+  /**
+   * Lista de proyectos 
+   */
   proyects: Array<Proyect>;
-
+  /**el constructor invoca una lista de tipo Proyect */
   constructor(private infoProyectService: InfoProyectService) { 
    this.proyects= new Array <Proyect> ();
   }
-
+  /**obtiene los proyectos */
   ngOnInit(): void {
     this.infoProyectService.getAllProyects();
   }
-
+  /**Funcion de llenado de proyectos */
   fillProyects() {
     this.infoProyectService.getAllProyects().subscribe((proyect)=> {
       this.proyects=proyect.data;

@@ -9,8 +9,13 @@ import { CompromiseInfoService } from '../service/compromise-info.service';
   styleUrls: ['./form-compromises.component.css']
 })
 export class FormCompromisesComponent implements OnInit {
+  /**
+   * -parameter title: nombre de la vista del formulario
+   * -parameter newCompromise: compromiso que se creara
+   */
   title: string;
   newCompromiso: Compromise;
+  /**constructor de asignacion del title y creacion del nuevo compromiso */
   constructor(private compromiseInfoService: CompromiseInfoService) {
     this.title = 'Mis Compromisos';
     this.newCompromiso = new Compromise ();
@@ -20,7 +25,7 @@ export class FormCompromisesComponent implements OnInit {
   ngOnInit() {
     
   }
-
+  /**funcion de creacion de compromiso */
   crearCompromiso(){
     this.compromiseInfoService.creationCompromise(this.newCompromiso);
   }
