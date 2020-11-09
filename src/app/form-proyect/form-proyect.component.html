@@ -16,13 +16,6 @@
                 <label for="float-input">Titulo del proyecto</label>
             </span>
         </div>
-        <!--input del id del user-->
-        <div class="input-id-proyecto">
-            <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [(ngModel)]="newProyect.idUser">
-                <label for="float-input">IdUser:</label>
-            </span>
-        </div>
     </div>    
   <div>  
     <!-- Ingresar objetivos del proyecto-->
@@ -50,9 +43,9 @@
 
     <div class="buttons">
     <!--button atras-->
-    <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
+    <button mat-raised-button color="primary" [routerLink]="['/verPerfil']" [style]="{'margin':'10px'}">Atras</button>
     <!--button que llama a la funcion registrar() para registrar proyecto-->
-    <button mat-raised-button (click)="registrar()" color="primary">Registrar</button>
+    <button mat-raised-button (click)="registrar()" [routerLink]="['/verPerfil']" color="primary">Registrar</button>
     </div>
 </div>
     

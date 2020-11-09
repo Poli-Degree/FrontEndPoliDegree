@@ -18,10 +18,9 @@ export class InfoProyectService {
 
  }
 
-  getAllProyects(): Observable<{data: Proyect[]}>{
+  getAllProyects(idUser): Observable<{data: Proyect[]}>{
 
-  return this.http.get<{data: Proyect[]}>(`${environment.apiUrl}proyects/1`)
+  return this.http.get<{data: Proyect[]}>(`${environment.apiUrl}proyects/${idUser}`);
   }
-
 
 }

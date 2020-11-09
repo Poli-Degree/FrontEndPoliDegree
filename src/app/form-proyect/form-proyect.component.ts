@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../environment/env';
 import {Proyect} from '../models/proyect.model';
 import { InfoProyectService } from '../service/info-proyect.service';
 
@@ -22,6 +23,7 @@ export class FormProyectComponent implements OnInit {
   }
 
   registrar() {
+    this.newProyect.idUser = environment.User.idUser;
     this.infoProyectService.creationProyect(this.newProyect);
 
   }
