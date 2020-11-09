@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Proyect } from '../models/proyect.model';
 import { Observable } from 'rxjs';
+import { environment } from '../environment/env';
 
 @Injectable({
   providedIn: 'root'
@@ -13,13 +14,13 @@ export class InfoProyectService {
 
  creationProyect (newProyect: Proyect) {
   
-    this.http.post('https://polidegree.herokuapp.com/proyects',newProyect).subscribe(proyect => console.log(proyect));
+    this.http.post(`${environment.apiUrl}proyects`,newProyect).subscribe(proyect => console.log(proyect));
 
  }
 
   getAllProyects(): Observable<{data: Proyect[]}>{
 
-  return this.http.get<{data: Proyect[]}>('https://polidegree.herokuapp.com/proyects/1')
+  return this.http.get<{data: Proyect[]}>(`${environment.apiUrl}proyects/1`)
   }
 
 
