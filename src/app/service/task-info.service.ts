@@ -21,8 +21,8 @@ export class TaskInfoService {
   }
 
 
-  getAllTasks(): Observable<{data: Task[]}>{
+  getAllTasks(idProyect): Observable<{data: Task[]}>{
 
-  return this.http.get<{data: Task[]}>(`${environment.apiUrl}tasks/151`)
+  return this.http.get<{data: Task[]}>(`${environment.apiUrl}tasks/${idProyect}`)
   }
 }

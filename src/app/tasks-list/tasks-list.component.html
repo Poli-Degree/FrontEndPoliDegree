@@ -5,6 +5,12 @@
         <h1 class="center">Tareas creadas</h1>
     </div>
     <!-- button que muestra las tareas-->
+    
+    <div class="ListBox">
+        <p-listbox [options]="proyects" [(ngModel)]="selectedProyect" optionLabel="title" [style]="{'width':'15rem'}"></p-listbox>
+    </div>
+   
+   
     <div class="button">
         <button  (click)="fillTasks()" mat-raised-button color="primary">Mostrar Tareas</button>
         <!--recorre las tareas creados-->

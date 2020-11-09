@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
+import { InfoProyectService } from '../service/info-proyect.service';
+import { environment } from '../environment/env';
 
 @Component({
   selector: 'app-student-profile',
@@ -9,13 +11,15 @@ import {ThemePalette} from '@angular/material/core';
 export class StudentProfileComponent implements OnInit {
   online: boolean;
   title: string;
-  constructor() { 
+  constructor(private infoProyectService: InfoProyectService) { 
     this.title = 'Estudiante';
     this.online = false; 
   }
   color: ThemePalette = 'primary'
 
   ngOnInit(): void {
+    this.infoProyectService.getAllProyects(environment.User.idUser).subscribe((proyect)=> {
+      environment.Proyects = proyect.data;});
   }
 
   cambiarStatus(){

@@ -41,6 +41,7 @@ import {ButtonModule} from 'primeng/button';
 import {EditorModule} from 'primeng/editor';
 import {CalendarModule} from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
+import {ListboxModule} from 'primeng/listbox';
 
 // Import http service
 import {HttpClientModule } from '@angular/common/http';
@@ -91,7 +92,8 @@ import { Menu2Component } from './menu2/menu2.component';
     MatListModule,
     InputTextModule, 
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ListboxModule
 
     
   ],

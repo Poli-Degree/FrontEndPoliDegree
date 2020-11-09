@@ -22,6 +22,7 @@ export class ProyectListComponent implements OnInit {
   ngOnInit(): void {
     this.infoProyectService.getAllProyects(environment.User.idUser).subscribe((proyect)=> {
       this.proyects=proyect.data;
+      environment.Proyects = proyect.data;
       console.log(this.proyects);});
   
   }
