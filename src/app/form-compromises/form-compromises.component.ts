@@ -17,7 +17,7 @@ export class FormCompromisesComponent implements OnInit {
   newCompromiso: Compromise;
   /**constructor de asignacion del title y creacion del nuevo compromiso */
   constructor(private compromiseInfoService: CompromiseInfoService) {
-    this.title = 'Mis Compromisos';
+    this.title = 'Nuevo Compromiso';
     this.newCompromiso = new Compromise ();
    }
    date: Date;
