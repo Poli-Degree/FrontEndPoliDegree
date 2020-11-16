@@ -12,7 +12,7 @@
           <mat-card-title>{{compromiseStatus}}
             <i class="pi pi-bookmark" style="font-size: 2rem"></i>
           </mat-card-title>
-          <mat-card-subtitle>Fecha de creacion: {{compromise.creationDate}}</mat-card-subtitle>
+          <mat-card-subtitle>Fecha de creacion: {{compromise.creationDate | date}}</mat-card-subtitle>
         
         <mat-card-content>
           <div [innerHtml]="compromise.description"></div>

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 
 import { Usuario } from '../models/user.model';
 import { environment } from '../environment/env';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,10 @@ export class UserInfoService {
     
     buscarUser (username: String) {
       return this.http.get <{data: Usuario}>(`${environment.apiUrl}users/${username}`);
+    }
+
+    getAllUsers (): Observable<{data: Usuario[]}> {
+      return this.http.get <{data: Usuario[]}>(`${environment.apiUrl}users`);
     }
 
   }

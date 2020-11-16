@@ -21,8 +21,8 @@ export class CompromiseInfoService {
   }
 
 
-  getAllCompromises(): Observable<{data: Compromise[]}>{
+  getAllCompromises(idProyect): Observable<{data: Compromise[]}>{
 
-  return this.http.get<{data: Compromise[]}>(`${environment.apiUrl}promises/151`)
+  return this.http.get<{data: Compromise[]}>(`${environment.apiUrl}promises/${idProyect}`)
   }
 }

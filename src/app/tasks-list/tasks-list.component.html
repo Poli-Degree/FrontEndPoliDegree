@@ -8,11 +8,13 @@
     <!-- button que muestra las tareas-->
     
     <div class="ListBox">
+        <h2>Selecciona un proyecto:</h2>
         <p-listbox [options]="proyects" [(ngModel)]="selectedProyect" optionLabel="title" [style]="{'width':'15rem'}"></p-listbox>
     </div>
-   
-   
+
+
     <div class="button">
+        
         <button  (click)="fillTasks()" mat-raised-button color="primary">Mostrar Tareas</button>
         <!--recorre las tareas creados-->
         <div *ngFor= 'let task of tasks'>
