@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 // Imports componentes
 import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario.component';
-import { StudentProfileComponent } from './student-profile/student-profile.component';
+import { StudentProfileComponent } from './main-student/student-profile/student-profile.component';
 import { FormCompromisesComponent } from './form-compromises/form-compromises.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { HomeComponent } from './home/home.component';
@@ -46,8 +46,13 @@ import {AutoCompleteModule} from 'primeng/autocomplete';
 
 // Import http service
 import {HttpClientModule } from '@angular/common/http';
-import { TutorProfileComponent } from './tutor-profile/tutor-profile.component';
-import { Menu2Component } from './menu2/menu2.component';
+
+import { TutorProfileComponent } from './main-tutor/tutor-profile/tutor-profile.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
+import { StudentMenuComponent } from './main-student/student-menu/student-menu.component';
+import { TutorMenuComponent } from './main-tutor/tutor-menu/tutor-menu.component';
+import { JuradoMenuComponent } from './main-jurado/jurado-menu/jurado-menu.component';
+import { JuradoProfileComponent } from './main-jurado/jurado-profile/jurado-profile.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +73,11 @@ import { Menu2Component } from './menu2/menu2.component';
     ProyectListComponent,
     ProyectComponent,
     TutorProfileComponent,
-    Menu2Component
+    MainMenuComponent,
+    StudentMenuComponent,
+    TutorMenuComponent,
+    JuradoMenuComponent,
+    JuradoProfileComponent
     
   ],
   /** Importacion de modulos de Angular   */

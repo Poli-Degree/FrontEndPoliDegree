@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
           console.log("Usuario no registra");
         }else if(user.data.password == this.password) {
           environment.User = user.data;  
-          this.link = "/verPerfil";
+          this.link = "/perfilEstudiante";
         } else {
           console.log("contraseña incorrecta");
         }

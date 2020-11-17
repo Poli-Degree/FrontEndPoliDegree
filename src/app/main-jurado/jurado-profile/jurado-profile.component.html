@@ -1,0 +1,37 @@
+<app-jurado-menu>
+     
+    <div class="responsive">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <div class="general">
+         <div class="Cabecera">
+             <h1 class="center">{{ title }}</h1>
+         </div>
+         
+         <div class="profile">
+             
+            <div class="switch">
+                <mat-slide-toggle >Status</mat-slide-toggle> 
+            </div>
+             <div class="image">
+                 <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="ProfilePicture" width="250" height="200">
+             </div>
+             <div class="update-picture">
+                <button mat-raised-button color="primary">Actualizar foto</button>
+            </div>
+            <p>
+                 <label >Nombre: Carlos</label>
+             </p>
+             <p>
+                 <label >Codigo: 2534758</label>
+             </p>
+         </div>
+         
+         <div class="procesos">
+             <div class="botones">
+                <button [routerLink]="['/verProyectos']" mat-raised-button color="primary">Proyectos</button>
+             </div>
+         <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
+         </div>
+         </div>
+     </div>
+     </app-jurado-menu>

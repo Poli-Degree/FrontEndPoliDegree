@@ -2,11 +2,11 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu2',
-  templateUrl: './menu2.component.html',
-  styleUrls: ['./menu2.component.css']
+  selector: 'app-main-menu',
+  templateUrl: './main-menu.component.html',
+  styleUrls: ['./main-menu.component.css']
 })
-export class Menu2Component implements OnInit {
+export class MainMenuComponent implements OnInit {
 
   mobileQuery: MediaQueryList;
 

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
-import { InfoProyectService } from '../service/info-proyect.service';
-import { environment } from '../environment/env';
-import { UserInfoService } from '../service/user-info.service';
+import { environment } from 'src/app/environment/env';
+import { InfoProyectService } from 'src/app/service/info-proyect.service';
+import { UserInfoService } from 'src/app/service/user-info.service';
+
+
 
 @Component({
   selector: 'app-student-profile',
