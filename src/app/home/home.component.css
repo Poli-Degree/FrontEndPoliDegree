@@ -20,11 +20,12 @@ h2{
     color: black;
 }
 .Menu{
-    width: 100%;
+    width: 40%;
     float: right;
     padding: 10px;
     text-align: center;
     margin: 1%;
+    border: red solid 2px;
     
 }
 
@@ -33,7 +34,7 @@ h2{
     float: left;
     padding: 10px;
     margin: 1%;
-
+    border: red solid 2px;
 }
 
 .objetivos{
@@ -41,8 +42,17 @@ h2{
     float: left;
     padding: 10px;
     margin: 1%;
-
+    border: red solid 2px;
 }
+
+.galeria{
+    width: 43%;
+    float: left;
+    padding: 10px;
+    margin: 1%;
+    border: red solid 2px;
+}
+
 
 .banner{
     width:100%;

@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { FormProyectComponent } from './form-proyect/form-proyect.component';
 import { MenuComponent } from './menu/menu.component';
 import { LoginComponent } from './login/login.component';
-import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
 import { CompromiseComponent } from './compromise/compromise.component';
 import { CompromisesListComponent } from './compromises-list/compromises-list.component';
 import { ProyectListComponent } from './proyect-list/proyect-list.component';
@@ -42,10 +41,12 @@ import {EditorModule} from 'primeng/editor';
 import {CalendarModule} from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
 
+
 // Import http service
 import {HttpClientModule } from '@angular/common/http';
 import { TutorProfileComponent } from './tutor-profile/tutor-profile.component';
 import { Menu2Component } from './menu2/menu2.component';
+import { EditarProyectoComponent } from './editar-proyecto/editar-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -60,13 +61,13 @@ import { Menu2Component } from './menu2/menu2.component';
     TasksListComponent,
     TaskComponent,
     LoginComponent,
-    WelcomeViewComponent,
     CompromiseComponent,
     CompromisesListComponent,
     ProyectListComponent,
     ProyectComponent,
     TutorProfileComponent,
-    Menu2Component
+    Menu2Component,
+    EditarProyectoComponent
     
   ],
   /** Importacion de modulos de Angular   */
@@ -91,9 +92,7 @@ import { Menu2Component } from './menu2/menu2.component';
     MatListModule,
     InputTextModule, 
     MatCardModule,
-    HttpClientModule
-
-    
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

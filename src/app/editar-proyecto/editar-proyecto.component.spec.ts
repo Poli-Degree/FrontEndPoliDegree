@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WelcomeViewComponent } from './welcome-view.component';
+import { EditarProyectoComponent } from './editar-proyecto.component';
 
-describe('WelcomeViewComponent', () => {
-  let component: WelcomeViewComponent;
-  let fixture: ComponentFixture<WelcomeViewComponent>;
+describe('EditarProyectoComponent', () => {
+  let component: EditarProyectoComponent;
+  let fixture: ComponentFixture<EditarProyectoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WelcomeViewComponent ]
+      declarations: [ EditarProyectoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WelcomeViewComponent);
+    fixture = TestBed.createComponent(EditarProyectoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

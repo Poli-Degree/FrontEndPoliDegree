@@ -8,10 +8,10 @@ import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario
 import { StudentProfileComponent } from './student-profile/student-profile.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
-import { WelcomeViewComponent } from './welcome-view/welcome-view.component';
 import { CompromisesListComponent } from './compromises-list/compromises-list.component';
 import { ProyectListComponent } from './proyect-list/proyect-list.component';
 import { TutorProfileComponent } from './tutor-profile/tutor-profile.component';
+import { EditarProyectoComponent } from './editar-proyecto/editar-proyecto.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home',pathMatch: 'full'},
@@ -22,11 +22,12 @@ const routes: Routes = [
   {path: 'crearCompromiso', component: FormCompromisesComponent},
   {path: 'verPerfil', component: StudentProfileComponent},
   {path: 'verTareas', component: TasksListComponent},
-  {path: 'bienvenida', component: WelcomeViewComponent},
   {path: 'login', component: LoginComponent},
   {path: 'verCompromisos', component: CompromisesListComponent},
   {path: 'misProyectos', component: ProyectListComponent},
-  {path: 'verPerfilTutor', component: TutorProfileComponent}
+  {path: 'verPerfilTutor', component: TutorProfileComponent},
+  {path: 'editarProyecto', component: EditarProyectoComponent}
+
 ];
 
 @NgModule({
