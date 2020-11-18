@@ -8,16 +8,10 @@
 
     <div class="task-info">
 
-        <div class="label-tasks">
-            <label for="labelTask-id">Tarea id: </label>
-            <label for="task-id"></label>
-        </div>
+        
     
         <div class="input-id-proyecto">
-            <span class="p-float-label">
-                <input id="float-input" type="number" pInputText [(ngModel)]="newTask.idProyect">
-                <label for="float-input">Proyecto ID</label>
-            </span>
+            <p-listbox [options]="proyects" [(ngModel)]="selectedProyect" optionLabel="title" [style]="{'width':'15rem'}"></p-listbox>
         </div>
 
         <div class="create-date">
@@ -41,7 +35,7 @@
 
         <div class="save-task">
             <button  (click)="taskCreation()" mat-raised-button color="primary">Crear tarea </button>
-            <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
+            <button mat-raised-button color="primary" [routerLink]="['/verPerfil']" [style]="{'margin':'10px'}">Atras</button>
         </div>
 
     </div>

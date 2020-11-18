@@ -1,4 +1,4 @@
-<app-menu2>
+<app-main-menu>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="cabecera">
         <h1>INICIA SESION</h1>
@@ -8,7 +8,7 @@
         <div class="username-input">
             <mat-form-field class="example-full-width">
               <mat-label>Ingresa tu usuario</mat-label>
-              <input matInput>
+              <input matInput [(ngModel)]="username">
             </mat-form-field>
         </div>
     
@@ -22,7 +22,8 @@
             </mat-form-field>
         </div>
 
-        <button mat-raised-button color="primary" [routerLink]="['/verPerfil']" [style]="{'margin':'1%'}">Iniciar sesión</button>
+        <button mat-raised-button color="primary" (click)="loguear()" [routerLink]="link" [style]="{'margin':'1%'}">Iniciar sesión</button>
+        
         <br>
         <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'1%'}">Atrás</button>
         <br>
@@ -35,4 +36,4 @@
         Odit, incidunt non?
     </div>
 
-</app-menu2>
+</app-main-menu>

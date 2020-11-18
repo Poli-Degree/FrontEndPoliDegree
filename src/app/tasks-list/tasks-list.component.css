@@ -21,3 +21,16 @@ h1{
     text-align: center;
     padding: 10px;
 }
+
+.ListBox {
+    width: 100%;
+    padding: 2% 40%;
+    text-align: center;
+}
+
+h2{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:#164c8b;
+}

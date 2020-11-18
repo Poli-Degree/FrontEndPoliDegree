@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Task } from '../models/task.model';
+import { environment } from '../environment/env';
 
 @Injectable({
   providedIn: 'root'
@@ -15,13 +16,13 @@ export class TaskInfoService {
    }
 
    creationTask (newTask: Task) {
-    this.http.post('https://polidegree.herokuapp.com/tasks',newTask).subscribe(task => console.log(task));
+    this.http.post(`${environment.apiUrl}tasks`,newTask).subscribe(task => console.log(task));
     
   }
 
 
-  getAllTasks(): Observable<{data: Task[]}>{
+  getAllTasks(idProyect): Observable<{data: Task[]}>{
 
-  return this.http.get<{data: Task[]}>('https://polidegree.herokuapp.com/tasks/151')
+  return this.http.get<{data: Task[]}>(`${environment.apiUrl}tasks/${idProyect}`)
   }
 }

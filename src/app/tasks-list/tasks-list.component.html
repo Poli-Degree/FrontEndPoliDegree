@@ -1,3 +1,4 @@
+<app-menu>
 <!-- Muestra la lista de tareas creadas-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
@@ -5,7 +6,15 @@
         <h1 class="center">Tareas creadas</h1>
     </div>
     <!-- button que muestra las tareas-->
+    
+    <div class="ListBox">
+        <h2>Selecciona un proyecto:</h2>
+        <p-listbox [options]="proyects" [(ngModel)]="selectedProyect" optionLabel="title" [style]="{'width':'15rem'}"></p-listbox>
+    </div>
+
+
     <div class="button">
+        
         <button  (click)="fillTasks()" mat-raised-button color="primary">Mostrar Tareas</button>
         <!--recorre las tareas creados-->
         <div *ngFor= 'let task of tasks'>
@@ -13,5 +22,5 @@
         </div>
     </div>
 </div>
-
+</app-menu>
 
