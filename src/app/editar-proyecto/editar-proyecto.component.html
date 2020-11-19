@@ -1,5 +1,5 @@
 <!-- Formulario para crear proyectos-->
-<app-menu>
+<app-student-menu>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="general">
@@ -12,49 +12,43 @@
             <!--input del id del proyecto-->
             <div class="input-titulo-proyecto">
                 <span class="p-float-label">
-                    <input id="float-input" type="text" pInputText value="cuurrentProyect.title">
+                    <input id="float-input" type="text" pInputText [(ngModel)]="currentProyect.title">
                     <label for="float-input">Titulo del proyecto</label>
                 </span>
             </div>
-            <!--input del id del user-->
-            <div class="input-id-proyecto">
-                <span class="p-float-label">
-                    <input id="float-input" type="text" pInputText>
-                    <label for="float-input">IdUser:</label>
-                </span>
-            </div>
         </div>    
+       
+    
       <div>  
         <!-- Ingresar objetivos del proyecto-->
         <h2>Objetivos:</h2>
         <div class="editor">
-            <p-editor [style]="{'height':'200px'}"></p-editor>
+            <p-editor [(ngModel)]="currentProyect.objects" [style]="{'height':'200px'}"></p-editor>
         </div>
         <!-- Ingresar marco teorico del proyecto-->
         <h2>Marco teórico:</h2>
         <div class="editor">
-            <p-editor [style]="{'height':'200px'}"></p-editor>
+            <p-editor [(ngModel)]="currentProyect.teorico" [style]="{'height':'200px'}"></p-editor>
         </div>    
         <!-- Ingresar marco metodologico del proyecto-->
         <h2>Marco metodológico:</h2>
         <div class="editor">
-            <p-editor  [style]="{'height':'200px'}"></p-editor>
+            <p-editor [(ngModel)]="currentProyect.metodologia" [style]="{'height':'200px'}"></p-editor>
         </div>
         <!-- Ingresar referencias del proyecto-->
         <h2>Referencias:</h2>
         <div class="editor">
-        <p-editor [style]="{'height':'200px'}"></p-editor>
+        <p-editor [(ngModel)]="currentProyect.references" [style]="{'height':'200px'}"></p-editor>
         </div>
         </div>
     
     
         <div class="buttons">
         <!--button atras-->
-        <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
+        <button mat-raised-button color="primary" [routerLink]="['/perfilEstudiante']" (click)="editar()" [style]="{'margin':'10px'}">Editar</button>
         <!--button que llama a la funcion registrar() para registrar proyecto-->
-        <button mat-raised-button color="primary">Registrar</button>
         </div>
     </div>
         
-    </app-menu>
+    </app-student-menu>
     

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { environment } from '../environment/env';
 import { Proyect } from '../models/proyect.model';
 
 @Component({
@@ -13,6 +14,10 @@ export class ProyectComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  editar (proyect: Proyect) {
+    environment.proyect = proyect;
   }
 
 }

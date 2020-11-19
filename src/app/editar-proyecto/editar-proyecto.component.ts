@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../environment/env';
 import {Proyect} from '../models/proyect.model';
 import { InfoProyectService } from '../service/info-proyect.service';
 
@@ -11,12 +12,15 @@ export class EditarProyectoComponent implements OnInit {
   currentProyect: Proyect;
 
   constructor(private infoProyectService: InfoProyectService) {
-    this.currentProyect = this.currentProyect;
+    this.currentProyect = environment.proyect;
   }
 
   ngOnInit(): void {
+    console.log(this.currentProyect);
   }
 
-  
+  editar() {
+    this.infoProyectService.updateProyect(this.currentProyect);
+  }
 
 }

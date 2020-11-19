@@ -6,5 +6,6 @@ export const environment = {
     apiUrl: 'https://polidegree.herokuapp.com/',
     User: new Usuario,
     Proyects: Array <Proyect> (),
-    Users: Array <Usuario>()
+    Users: Array <Usuario>(),
+    proyect: new Proyect
 } 

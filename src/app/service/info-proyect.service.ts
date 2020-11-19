@@ -23,4 +23,10 @@ export class InfoProyectService {
   return this.http.get<{data: Proyect[]}>(`${environment.apiUrl}proyects/${idUser}`);
   }
 
+  updateProyect (proyect: Proyect) {
+    console.log(proyect);
+    this.http.put(`${environment.apiUrl}proyects/${proyect.idProyect}`, proyect).subscribe(proyect => console.log(proyect));
+  }
+
+
 }
