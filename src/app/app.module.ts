@@ -4,6 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { PdfMakeWrapper } from 'pdfmake-wrapper';
+import pdfFonts from "pdfmake/build/vfs_fonts"; // fonts provided for pdfmake
+ 
+// Set the fonts to use
+PdfMakeWrapper.setFonts(pdfFonts);
+
 // Imports componentes
 import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario.component';
 import { StudentProfileComponent } from './main-student/student-profile/student-profile.component';
@@ -54,6 +60,7 @@ import { StudentMenuComponent } from './main-student/student-menu/student-menu.c
 import { TutorMenuComponent } from './main-tutor/tutor-menu/tutor-menu.component';
 import { JuradoMenuComponent } from './main-jurado/jurado-menu/jurado-menu.component';
 import { JuradoProfileComponent } from './main-jurado/jurado-profile/jurado-profile.component';
+import { ActaCalificacionComponent } from './acta-calificacion/acta-calificacion.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +85,8 @@ import { JuradoProfileComponent } from './main-jurado/jurado-profile/jurado-prof
     StudentMenuComponent,
     TutorMenuComponent,
     JuradoMenuComponent,
-    JuradoProfileComponent
+    JuradoProfileComponent,
+    ActaCalificacionComponent
     
   ],
   /** Importacion de modulos de Angular   */
@@ -106,6 +114,7 @@ import { JuradoProfileComponent } from './main-jurado/jurado-profile/jurado-prof
     HttpClientModule,
     ListboxModule,
     AutoCompleteModule
+    
 
     
   ],

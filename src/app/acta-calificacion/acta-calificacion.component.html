@@ -1,0 +1,87 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+
+    <div class="Cabecera">
+        <h1 class="center">Acta de Sustentacion</h1>
+    </div>
+
+    <div class="contenido">
+        <div class="documentoInicio">
+            <!--<input [(ngModel)]="textoContenido" value="INSTITUCION UNIVERSITARIA POLITECNICO GRANCOLOMBIANO">-->
+            <b>INSTITUCIÓN UNIVERSITARIA POLITÉCNICO GRANCOLOMBIANO  <br>
+            FACULTAD DE INGENIERÍA, DISEÑO E INNOVACIÓN <br>
+            ESCUELA DE TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES <br>
+            <label>{{newAct.programa | uppercase}}</label><br>
+            ACTA DE SUSTENTACIÓN - TRABAJO DE GRADO</b> <br>
+            <br>
+        </div>
+
+        <div class="documentoContenido">
+            El día <p-calendar [showIcon]="true" inputId="icon" [(ngModel)]="newAct.fechaSus"></p-calendar>, se convoca al estudiante 
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre del estudiante</mat-label>
+                <input matInput [(ngModel)]="newAct.autor">
+            </mat-form-field>
+            con código
+            <mat-form-field class="example-full-width">
+                <mat-label>Codigo del estudiante</mat-label>
+                <input matInput type="number" [(ngModel)]="newAct.codigoEstudiante">
+            </mat-form-field> 
+            del programa de 
+            <mat-form-field class="example-full-width">
+                <mat-label>Programa</mat-label>
+                <input matInput [(ngModel)]="newAct.programa">
+            </mat-form-field>
+            para sustentar su trabajo de grado denominado 
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre del proyecto</mat-label>
+                <input matInput [(ngModel)]="newAct.nombreProyecto">
+            </mat-form-field>.
+            El trabajo tiene como director al profesor 
+            <mat-form-field class="example-full-width">
+                <mat-label>Tutor</mat-label>
+                <input matInput [(ngModel)]="newAct.tutor">
+            </mat-form-field>,
+            docente de planta de la institución, y como jurados a los profesores 
+            <mat-form-field class="example-full-width">
+                <mat-label>Jurado 1</mat-label>
+                <input matInput [(ngModel)]="newAct.jurado1">
+            </mat-form-field> y 
+            <mat-form-field class="example-full-width">
+                <mat-label>Jurado 2</mat-label>
+                <input matInput [(ngModel)]="newAct.jurado2">
+            </mat-form-field>.
+            <br>
+
+            Teniendo en cuenta el formato de evaluación de trabajos de grado definido por la Facultad. El estudiantes
+            se presento y realizó ola sustentación correspondiente, recibió la retroalimentación por parte de los
+            jurados, r4eslvió dudas y se comprometió a realizar las modificaciones sugeridas por parte de los 
+            jurados en el documento escrito. Las notas para este trabajo son: 
+
+            <table class="tabla">
+                <tr>
+                    <td> Asesor 1 - 50% (<label>{{newAct.tutor}}</label>)</td>
+                    <td> <label>{{newAct.notaTutor}}</label></td>
+                </tr>
+                <tr>
+                    <td> Jurado 1 - 25% (<label>{{newAct.jurado1}}</label>)</td>
+                    <td> <label>{{newAct.notaJurado1}}</label></td>
+                </tr>
+                <tr>
+                    <td> Jurado 2 - 25% (<label>{{newAct.jurado2}}</label>)</td>
+                    <td> <label>{{newAct.notaJurado2}}</label></td>
+                </tr>
+                <tr>
+                    <td> <b>Definitiva</b> </td>
+                    <td> <label>{{definitiva}}</label></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="botones">
+        <button mat-raised-button color="primary" (click)="generatePDF()">Generar PDF</button>
+        <button mat-raised-button color="primary" [style]="{'margin':'10px'}">Atras</button>
+    </div>
+</div>
