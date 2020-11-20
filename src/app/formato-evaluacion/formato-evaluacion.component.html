@@ -1,0 +1,187 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+
+    <div class="Cabecera">
+        <h1 class="center">Formato de Evaluacion</h1>
+    </div>
+
+    <div class="contenido">
+        <div class="div1">
+            POLITECNICO GRANCOLOMBIANO
+        </div>
+        <div class="div2">
+            FACULTAD DE INGENIERIA, DISEÑO E INNOVACION
+        </div>
+        <div class="titulo">
+            FORMATO DE EVALUACION DE PROYECTO DE GRADO (Jurado)
+        </div>
+        <hr>
+        <div class="info">
+            <table>
+                <tr>
+                    <td>PROYECTO</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                        <mat-label>Nombre del proyecto</mat-label>
+                        <input matInput [(ngModel)]="newAct.nombreProyecto">
+                        </mat-form-field>
+                    </td>
+                <tr>
+                    <td>AUTOR</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                        <mat-label>Nombre del estudiante</mat-label>
+                        <input matInput [(ngModel)]="newAct.autor">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DIRECTOR</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                        <mat-label>Director</mat-label>
+                        <input matInput [(ngModel)]="newAct.tutor">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JURADO</td>
+                    <td><mat-form-field class="example-full-width">
+                        <mat-label>Nombre del jurado 1</mat-label>
+                        <input matInput [(ngModel)]="newAct.jurado1">
+                        </mat-form-field>.
+                    </td>
+                </tr>
+            </table>
+            <hr>
+
+            <table>
+                <tr>
+                    <td class="main">Item</td>
+                    <td class="main">Escala</td>
+                    <td class="main">Peso</td>
+                    <td class="main">Calificacion</td>
+                    <td class="main">Comentarios</td>
+                </tr>
+                <tr>
+                    <td>Problema de investigación o práctica (objetivos de proyecto claros, presentación del problema)</td>
+                    <td>0-100</td>
+                    <td>10%</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Calificacion</mat-label>
+                            <input matInput [(ngModel)]="newAct.calificacion1" type="number">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Ingresa tu comentario</mat-label>
+                            <input matInput [(ngModel)]="newAct.comentario1">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Solución al problema (Técnicas apropiadas para definir la solución, presentación clara del esquema de solución y metodologías y lineamientos a seguir)</td>
+                    <td>0-100</td>
+                    <td>10%</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Calificacion</mat-label>
+                            <input matInput [(ngModel)]="newAct.calificacion2" type="number">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Ingresa tu comentario</mat-label>
+                            <input matInput [(ngModel)]="newAct.comentario2">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ejecución: Detalle del trabajo realizado y los resultados obtenidos (implementación hecha, herramienta desarrollada, algoritmo, resultado teórico, etc.)</td>
+                    <td>0-100</td>
+                    <td>25%</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Calificacion</mat-label>
+                            <input matInput [(ngModel)]="newAct.calificacion3" type="number">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Ingresa tu comentario</mat-label>
+                            <input matInput [(ngModel)]="newAct.comentario3">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Estructura: se reconoce un proceso metodológico, hay conclusiones relacionando la bibliografía, el problema de investigación o práctica y el documento presentado.</td>
+                    <td>0-100</td>
+                    <td>20%</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Calificacion</mat-label>
+                            <input matInput [(ngModel)]="newAct.calificacion4" type="number">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Ingresa tu comentario</mat-label>
+                            <input matInput [(ngModel)]="newAct.comentario4">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calidad de la exposición (presentación informativa, contenido apropiado, manejo del tiempo,etc.)</td>
+                    <td>0-100</td>
+                    <td>15%</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Calificacion</mat-label>
+                            <input matInput [(ngModel)]="newAct.calificacion5" type="number">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Ingresa tu comentario</mat-label>
+                            <input matInput [(ngModel)]="newAct.comentario5">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Documento: Calidad de la documentación (estructura, cumplimiento de normas, organización, inclusión de aspectos significativos.)</td>
+                    <td>0-100</td>
+                    <td>20%</td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Calificacion</mat-label>
+                            <input matInput [(ngModel)]="newAct.calificacion6" type="number">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Ingresa tu comentario</mat-label>
+                            <input matInput [(ngModel)]="newAct.comentario6">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>CALIFICACION</td>
+                    <td><label>{{calificacionFinal}}</label></td>
+                    <td></td>
+                </tr>
+            </table>
+            <hr>
+        </div>
+    </div>
+
+    <div class="botones">
+        <button mat-raised-button color="primary" (click)="calcularCalificacion()">Hacer calculo</button>
+        <button mat-raised-button color="primary" (click)="generatePDF()" [style]="{'margin':'10px'}">Generar PDF</button>
+        <button mat-raised-button color="primary" [style]="{'margin':'10px'}">Atras</button>
+        
+    </div>
+
+</div>
