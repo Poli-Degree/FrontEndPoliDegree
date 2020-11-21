@@ -1,0 +1,41 @@
+<!-- Formulario para crear compromisos-->
+<app-student-menu>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    
+    <div class="Cabecera">
+        <h1 class="center">{{ title }}</h1>
+    </div>
+
+    <div class="compromise-info">
+       
+        
+        <!--calendario para fecha de creacion-->
+        <div class="create-date">
+            
+            <div class="labels-compromises">
+                <h1>Asignar al proyecto:</h1>
+                <div class="input-id-proyecto">
+                    <p-listbox [options]="proyects" [(ngModel)]="selectedProyect" optionLabel="title" [style]="{'width':'15rem'}"></p-listbox>
+                </div>    
+            </div>
+            
+            <label for="icon">Fecha de creacion: </label>
+            <p-calendar [(ngModel)]="newCompromiso.creationDate" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+        <br>
+        <!-- Ingresar descripcion del compromiso-->
+        <div class="description">
+            <label>Describe tu compromiso: </label>
+            <p-editor [(ngModel)]="newCompromiso.description" [style]="{'height':'200px'}"></p-editor >
+        </div>
+        <br>
+        <!--button guardar compromiso-->
+        <div class="save-compromise">
+            <button mat-raised-button color="primary" (click)="crearCompromiso()" [routerLink]="['/verPerfil']">Crear compromiso </button>
+            <button mat-raised-button color="primary" [routerLink]="['/verPerfil']" [style]="{'margin':'10px'}">Atras</button>
+        </div>
+
+    </div>
+</div>
+</app-student-menu>

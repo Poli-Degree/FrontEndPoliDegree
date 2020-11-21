@@ -13,18 +13,9 @@ PdfMakeWrapper.setFonts(pdfFonts);
 // Imports componentes
 import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario.component';
 import { StudentProfileComponent } from './main-student/student-profile/student-profile.component';
-import { FormCompromisesComponent } from './form-compromises/form-compromises.component';
-import { TaskFormComponent } from './task-form/task-form.component';
 import { HomeComponent } from './home/home.component';
-import { FormProyectComponent } from './form-proyect/form-proyect.component';
-import { MenuComponent } from './menu/menu.component';
 import { LoginComponent } from './login/login.component';
-import { CompromiseComponent } from './compromise/compromise.component';
-import { CompromisesListComponent } from './compromises-list/compromises-list.component';
-import { ProyectListComponent } from './proyect-list/proyect-list.component';
-import { ProyectComponent } from './proyect/proyect.component';
-import { TaskComponent } from './task/task.component';
-import { TasksListComponent } from './tasks-list/tasks-list.component';
+
 
 // Imports Angular 
 import { FormsModule } from '@angular/forms';
@@ -63,6 +54,17 @@ import { JuradoProfileComponent } from './main-jurado/jurado-profile/jurado-prof
 import { ActaCalificacionComponent } from './acta-calificacion/acta-calificacion.component';
 import { FormatoEvaluacionComponent } from './formato-evaluacion/formato-evaluacion.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { FormProyectComponent } from './all-proyects/form-proyect/form-proyect.component';
+import { FormCompromisesComponent } from './all-compromises/form-compromises/form-compromises.component';
+import { TaskFormComponent } from './all-tasks/task-form/task-form.component';
+import { TasksListComponent } from './all-tasks/tasks-list/tasks-list.component';
+import { TaskComponent } from './all-tasks/task/task.component';
+import { CompromiseComponent } from './all-compromises/compromise/compromise.component';
+import { CompromisesListComponent } from './all-compromises/compromises-list/compromises-list.component';
+import { ProyectListComponent } from './all-proyects/proyect-list/proyect-list.component';
+import { ProyectComponent } from './all-proyects/proyect/proyect.component';
+import { FormCompromisesTutorComponent } from './main-tutor/form-compromises-tutor/form-compromises-tutor.component';
+import { FormTasksTutorComponent } from './main-tutor/form-tasks-tutor/form-tasks-tutor.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,6 @@ import { DocumentsComponent } from './documents/documents.component';
     FormCompromisesComponent,
     TaskFormComponent,
     HomeComponent,
-    MenuComponent,
     TasksListComponent,
     TaskComponent,
     LoginComponent,
@@ -90,7 +91,9 @@ import { DocumentsComponent } from './documents/documents.component';
     JuradoProfileComponent,
     ActaCalificacionComponent,
     FormatoEvaluacionComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    FormCompromisesTutorComponent,
+    FormTasksTutorComponent
     
   ],
   /** Importacion de modulos de Angular   */

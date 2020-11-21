@@ -1,0 +1,24 @@
+<app-student-menu>
+<!-- Muestra la lista de componentes creados-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="Cabecera">
+        <h1 class="center">Compromisos creados</h1>
+    </div>
+    <!-- button que muestra los compromisos-->
+    <div class="ListBox">
+        <h2>Selecciona un proyecto:</h2>
+        <p-listbox [options]="proyects" [(ngModel)]="selectedProyect" optionLabel="title" [style]="{'width':'15rem'}"></p-listbox>
+    </div>
+    
+    
+    <div class="button">
+       
+        <button  (click)="fillCompromises()" mat-raised-button color="primary">Mostrar Compromisos</button>
+        <!--recorre los compromisos creados-->
+        <div *ngFor= 'let compromise of compromises'>
+            <app-compromise [compromise]="compromise"></app-compromise>
+        </div>
+    </div>
+</div>
+</app-student-menu>

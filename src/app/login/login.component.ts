@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
         }else if(user.data.password == this.password) {
           environment.User = user.data;  
           
-          if (user.data.usertype == "Estudiante") {
+          if (user.data.usertype == "Estudiante" || 'estudiante') {
             this.link = "/perfilEstudiante";
           } else if (user.data.usertype == "Tutor") {
             this.link = "/perfilTutor";
