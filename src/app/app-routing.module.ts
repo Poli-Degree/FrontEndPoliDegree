@@ -13,6 +13,9 @@ import { ProyectListComponent } from './proyect-list/proyect-list.component';
 import { EditarProyectoComponent } from './editar-proyecto/editar-proyecto.component';
 import { TutorProfileComponent } from './main-tutor/tutor-profile/tutor-profile.component';
 import { JuradoProfileComponent } from './main-jurado/jurado-profile/jurado-profile.component';
+import { DocumentsComponent } from './documents/documents.component';
+import { ActaCalificacionComponent } from './acta-calificacion/acta-calificacion.component';
+import { FormatoEvaluacionComponent } from './formato-evaluacion/formato-evaluacion.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home',pathMatch: 'full'},
@@ -28,6 +31,9 @@ const routes: Routes = [
   {path: 'misProyectos', component: ProyectListComponent},
   {path: 'verPerfilTutor', component: TutorProfileComponent},
   {path: 'editarProyecto', component: EditarProyectoComponent},
+  {path: 'documentos', component: DocumentsComponent},
+  {path: 'actaSustentacion', component: ActaCalificacionComponent},
+  {path: 'formatoEvaluacion', component: FormatoEvaluacionComponent},
 
   {path: 'verProyectos', component: ProyectListComponent},
   {path: 'perfilTutor', component: TutorProfileComponent},

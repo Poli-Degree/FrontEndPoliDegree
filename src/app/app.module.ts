@@ -62,6 +62,7 @@ import { JuradoMenuComponent } from './main-jurado/jurado-menu/jurado-menu.compo
 import { JuradoProfileComponent } from './main-jurado/jurado-profile/jurado-profile.component';
 import { ActaCalificacionComponent } from './acta-calificacion/acta-calificacion.component';
 import { FormatoEvaluacionComponent } from './formato-evaluacion/formato-evaluacion.component';
+import { DocumentsComponent } from './documents/documents.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { FormatoEvaluacionComponent } from './formato-evaluacion/formato-evaluac
     JuradoMenuComponent,
     JuradoProfileComponent,
     ActaCalificacionComponent,
-    FormatoEvaluacionComponent
+    FormatoEvaluacionComponent,
+    DocumentsComponent
     
   ],
   /** Importacion de modulos de Angular   */

@@ -10,6 +10,7 @@ import { Acts } from '../models/acts.model';
 export class FormatoEvaluacionComponent implements OnInit {
   newAct: Acts;
   calificacionFinal: number;
+  numeroA: number;
 
   constructor() { 
     this.newAct = new Acts();

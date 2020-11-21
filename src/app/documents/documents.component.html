@@ -1,0 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+
+    <div class="Cabecera">
+        <h1 class="center">{{title}}</h1>
+    </div>
+
+    <div class="ListBox">
+        <h2>Selecciona un proyecto:</h2>
+        <p-listbox [options]="proyects" [(ngModel)]="selectedProyect" optionLabel="title" [style]="{'width':'15rem'}"></p-listbox>
+    </div>
+
+    <div class="opciones">
+        <label>¿Qué documentos quieres generar?</label>
+        <br>
+        <button mat-raised-button color="primary" [routerLink]="['/actaSustentacion']" [style]="{'margin':'10px'}">Acta de Sustentacion</button>
+        <br>
+        <button mat-raised-button color="primary" [routerLink]="['/formatoEvaluacion']" [style]="{'margin':'10px'}">Formato de Evaluacion</button>
+        <br>
+        <button mat-raised-button color="primary" [routerLink]="['/perfilEstudiante']" [style]="{'margin':'10px'}">Atras</button>
+    </div>
+
+    
+</div>

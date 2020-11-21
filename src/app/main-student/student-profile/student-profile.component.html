@@ -1,6 +1,4 @@
 <app-student-menu>
-    
-    <div class="responsive">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
     <div class="Cabecera">
@@ -10,6 +8,16 @@
     <div class="profile">
         <div class="switch">
             <mat-slide-toggle (click)="cambiarStatus()" [color]="color">Status</mat-slide-toggle> 
+        </div>
+        <div class="procesos">
+            <p *ngIf="this.online">
+                <label for="labelStatus">Status: </label>
+                <label for="status">Online</label>
+            </p>
+            <p  *ngIf="!this.online">
+                <label for="labelStatus">Status: </label>
+                <label for="status">Offline</label>
+            </p>
         </div>
         <div class="image">
             <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="ProfilePicture" width="250" height="200">
@@ -31,39 +39,15 @@
         </p>
     </div>
     
-    <div class="procesos">
-        <p *ngIf="this.online">
-            <label for="labelStatus">Status: </label>
-            <label for="status">Online</label>
-        </p>
-        <p  *ngIf="!this.online">
-            <label for="labelStatus">Status: </label>
-            <label for="status">Offline</label>
-        </p>
-        <p>
-            <label for="proyectoLabel">Proyecto: </label>
-            <label for="proyecto">No tiene proyectos registrados</label>
-        </p>
-
         <div class="buttons">
-            <div class="update-button">
-                <button [routerLink]="['/verProyectos']" mat-raised-button color="primary">Actualizar proyecto</button>
-            </div>
-
-            <div class="new-proyect-button">
-                <button mat-raised-button color="primary">Registrar proyecto</button>
-            </div>
-
-            <div class="compromise-button">
-                <button [routerLink]="['/verCompromisos']" mat-raised-button color="primary">Mis compromisos</button>
-            </div>
-
-            <div class="tasks-button">
-                <button [routerLink]="['/verTareas']" mat-raised-button color="primary">Mis tareas</button>
-            </div>
+            <button [routerLink]="['/verProyectos']" mat-raised-button color="primary" [style]="{'margin':'10px'}" class="AP">Actualizar proyecto</button>
+            <button [routerLink]="['/verCompromisos']" mat-raised-button color="primary" [style]="{'margin':'10px'}" class="MC">Mis compromisos</button>
+            <button [routerLink]="['/verTareas']" mat-raised-button color="primary" [style]="{'margin':'10px'}">Mis tareas</button>
+            <button mat-raised-button color="primary" [routerLink]="['/documentos']" [style]="{'margin':'10px'}">Mis documentos</button>
+            <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
         </div>
-    <button mat-raised-button color="primary" [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
-    </div>
-    </div>
+
+        
+   
 </div>
-</app-student-menu>
+    
