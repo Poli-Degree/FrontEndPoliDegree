@@ -25,4 +25,9 @@ export class CompromiseInfoService {
 
   return this.http.get<{data: Compromise[]}>(`${environment.apiUrl}promises/${idProyect}`)
   }
+
+  updateStatus (compromise: Compromise) {
+    this.http.put(`${environment.apiUrl}promises/${compromise.idPromise}`, compromise).subscribe(promise => console.log(promise));
+  }
+
 }

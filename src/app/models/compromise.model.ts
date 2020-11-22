@@ -5,4 +5,5 @@ export class Compromise{
     description: string;
     creationDate: Date;
     tutor: string;
+    status: number;
 }

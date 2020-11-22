@@ -5,4 +5,5 @@ export class Task{
     creationDate: Date;
     limitDate: Date;
     description: string;
+    status: number;
 }

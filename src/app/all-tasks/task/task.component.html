@@ -11,8 +11,7 @@
       <div [innerHtml]="task.description"></div>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button (click)="chooseTaskStatus()">Terminar</button>
-      <button mat-button>Eliminar</button>
+      <button mat-raised-button color="primary" (click)="chooseTaskStatus()">Cambiar estado</button>
     </mat-card-actions>
   </mat-card>
 </div>
