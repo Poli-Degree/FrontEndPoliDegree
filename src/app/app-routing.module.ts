@@ -32,7 +32,6 @@ const routes: Routes = [
   {path: 'verTareas', component: TasksListComponent},
   {path: 'login', component: LoginComponent},
   {path: 'verCompromisos', component: CompromisesListComponent},
-  {path: 'verPerfilTutor', component: TutorProfileComponent},
   {path: 'editarProyecto', component: EditarProyectoComponent},
   {path: 'documentos', component: DocumentsComponent},
   {path: 'actaSustentacion', component: ActaCalificacionComponent},
