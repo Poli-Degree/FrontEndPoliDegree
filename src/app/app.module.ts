@@ -66,6 +66,8 @@ import { ProyectComponent } from './all-proyects/proyect/proyect.component';
 import { FormCompromisesTutorComponent } from './main-tutor/form-compromises-tutor/form-compromises-tutor.component';
 import { FormTasksTutorComponent } from './main-tutor/form-tasks-tutor/form-tasks-tutor.component';
 
+//import paginator
+import {NgxPaginationModule} from 'ngx-pagination'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,7 +122,8 @@ import { FormTasksTutorComponent } from './main-tutor/form-tasks-tutor/form-task
     MatCardModule,
     HttpClientModule,
     ListboxModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    NgxPaginationModule
     
 
     

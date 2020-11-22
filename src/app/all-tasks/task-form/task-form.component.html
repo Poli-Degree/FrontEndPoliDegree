@@ -34,7 +34,7 @@
         <br>
 
         <div class="save-task">
-            <button  (click)="taskCreation()" mat-raised-button color="primary">Crear tarea </button>
+            <button  (click)="taskCreation()"  [routerLink]="['/perfilEstudiante']" mat-raised-button color="primary">Crear tarea </button>
             <button mat-raised-button color="primary" [routerLink]="['/perfilEstudiante']" [style]="{'margin':'10px'}">Atras</button>
         </div>
 

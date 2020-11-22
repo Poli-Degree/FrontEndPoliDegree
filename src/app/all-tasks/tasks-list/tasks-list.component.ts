@@ -17,10 +17,14 @@ export class TasksListComponent implements OnInit {
   tasks: Array<Task>;
   proyects: Proyect []; 
   selectedProyect: Proyect;
+  pageActual: number;
+  items: number;
   /**el constructor invoca una lista de tipo Task */
   constructor(private taskInfoService: TaskInfoService) {
     this.tasks = new Array <Task> ();
     this.proyects = environment.Proyects;
+    this.pageActual = 1;
+    this.items = 1;
    }
    /**obtiene los tareas */
    ngOnInit(): void {

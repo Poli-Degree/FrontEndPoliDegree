@@ -21,3 +21,16 @@ h1{
     text-align: center;
     padding: 10px;
 }
+
+.paginator {
+
+    text-align: center;
+}
+
+.inputTareas {
+    margin: 5px;
+}
+
+.inputActual {
+    margin: 5px;
+}

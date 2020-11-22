@@ -34,3 +34,16 @@ h2{
     text-align: center;
     color:#164c8b;
 }
+
+.paginator {
+
+    text-align: center;
+}
+
+.inputTareas {
+    margin: 5px;
+}
+
+.inputActual {
+    margin: 5px;
+}

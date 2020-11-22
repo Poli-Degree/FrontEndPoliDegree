@@ -17,10 +17,14 @@ export class CompromisesListComponent implements OnInit {
   compromises: Array<Compromise>; 
   proyects: Proyect []; 
   selectedProyect: Proyect;
+  pageActual: number;
+  items: number;
   /**el constructor invoca una lista de tipo Comprmise */
   constructor(private compromiseInfoService: CompromiseInfoService) {
     this.compromises = new Array <Compromise> ();
     this.proyects = environment.Proyects;
+    this.pageActual = 1;
+    this.items = 1;
    }
    ngOnInit(): void {
    }
