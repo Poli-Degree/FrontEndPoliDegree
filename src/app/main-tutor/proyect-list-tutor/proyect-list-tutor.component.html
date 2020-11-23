@@ -1,0 +1,39 @@
+<app-tutor-menu>
+    <!-- Muestra la lista de proyectos creados-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="general">
+        <div class="Cabecera">
+            <h1 class="center">Proyectos</h1>
+        </div>
+         <!-- button que muestra los proyetos-->
+        <div class="paginator">
+                
+           
+                
+                <div class="inputProyect">
+                <label>Buscar proyecto:</label>
+                <br>
+                <input id="float-input" type="text" pInputText [(ngModel)]="proyect" (input)="filtrar()">
+                <br>
+                </div>
+            
+            
+                <div class="inputTareas">
+                <label># Proyectos por pagina:</label>
+                <br>
+                <input id="float-input" type="text" pInputText [(ngModel)]="items">
+                </div>
+                <div class="inputActual">
+                <label>Pagina actual:</label>
+                <br>
+                <input id="float-input" type="text" pInputText [(ngModel)]="pageActual">
+                </div>
+           
+            <!--recorre los proyectos creados-->
+            <pagination-controls (pageChange)="pageActual = $event"></pagination-controls>
+            <div *ngFor= 'let proyect of proyects | paginate: { itemsPerPage: items, currentPage: pageActual}'>
+                <app-proyect [proyect]="proyect"></app-proyect>
+            </div>
+        </div>
+    </div>
+    </app-tutor-menu>

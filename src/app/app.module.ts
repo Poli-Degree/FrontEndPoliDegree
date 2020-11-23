@@ -67,7 +67,9 @@ import { FormCompromisesTutorComponent } from './main-tutor/form-compromises-tut
 import { FormTasksTutorComponent } from './main-tutor/form-tasks-tutor/form-tasks-tutor.component';
 
 //import paginator
-import {NgxPaginationModule} from 'ngx-pagination'; 
+import {NgxPaginationModule} from 'ngx-pagination';
+import { ProyectListTutorComponent } from './main-tutor/proyect-list-tutor/proyect-list-tutor.component';
+import { ProyectListJuradoComponent } from './main-jurado/proyect-list-jurado/proyect-list-jurado.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -95,7 +97,9 @@ import {NgxPaginationModule} from 'ngx-pagination';
     FormatoEvaluacionComponent,
     DocumentsComponent,
     FormCompromisesTutorComponent,
-    FormTasksTutorComponent
+    FormTasksTutorComponent,
+    ProyectListTutorComponent,
+    ProyectListJuradoComponent
     
   ],
   /** Importacion de modulos de Angular   */

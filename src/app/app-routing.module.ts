@@ -20,6 +20,8 @@ import { CompromisesListComponent } from './all-compromises/compromises-list/com
 import { ProyectListComponent } from './all-proyects/proyect-list/proyect-list.component';
 import { FormCompromisesTutorComponent } from './main-tutor/form-compromises-tutor/form-compromises-tutor.component';
 import { FormTasksTutorComponent } from './main-tutor/form-tasks-tutor/form-tasks-tutor.component';
+import { ProyectListTutorComponent } from './main-tutor/proyect-list-tutor/proyect-list-tutor.component';
+import { ProyectListJuradoComponent } from './main-jurado/proyect-list-jurado/proyect-list-jurado.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home',pathMatch: 'full'},
@@ -41,7 +43,9 @@ const routes: Routes = [
   {path: 'perfilTutor', component: TutorProfileComponent},
   {path: 'perfilJurado', component: JuradoProfileComponent},
   {path: 'crearCompromisoT', component: FormCompromisesTutorComponent},
-  {path: 'crearTareaT', component: FormTasksTutorComponent}
+  {path: 'crearTareaT', component: FormTasksTutorComponent},
+  {path: 'verProyectosT', component: ProyectListTutorComponent},
+  {path: 'verProyectosJ', component: ProyectListJuradoComponent},
 
 ];
 
