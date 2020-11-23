@@ -62,3 +62,22 @@ table {
 .botones{
     text-align: center;
 }
+
+@media only screen and (max-width: 500px){
+  .contenido{
+    width: 92%;
+  }
+  .documentoInicio{
+    width: 100%;
+  }
+
+  .documentoContenido{
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .tabla{
+    width: 100%;
+  }
+
+}

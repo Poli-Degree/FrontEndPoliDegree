@@ -87,3 +87,19 @@ table {
   .botones{
     text-align: center;
 }
+
+@media only screen and (max-width: 500px){
+  .contenido{
+    width: 100%;
+  }
+
+  .table{
+    width: 20%;
+  }
+
+  .td, th{
+    text-align: left;
+    padding: 8px;
+  }
+
+  }

@@ -24,9 +24,7 @@ h2{
     float: right;
     padding: 10px;
     text-align: center;
-    margin: 1%;
-    border: red solid 2px;
-    
+    margin: 1%;  
 }
 
 .contenido{
@@ -34,40 +32,41 @@ h2{
     float: left;
     padding: 10px;
     margin: 1%;
-    border: red solid 2px;
+    height: 400px;
 }
+
+.imagen{
+    max-width: 450px;
+    max-height: 200px;
+    float: right;
+    position: relative; bottom:35px;
+}
+
 
 .objetivos{
     width:53%;
     float: left;
     padding: 10px;
     margin: 1%;
-    border: red solid 2px;
 }
-
-.galeria{
-    width: 43%;
-    float: left;
-    padding: 10px;
-    margin: 1%;
-    border: red solid 2px;
-}
-
 
 .banner{
     width:100%;
     float: left;
-    padding: 10px;
     background: rgb(0,236,255);
     background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
-    text-align: center;
     color: white;
-
+    font-size: 15px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px){
     .contenido{
         width: 100%;
+    }
+
+    .imagen{
+        text-align: center;
     }
     
     .objetivos{
@@ -80,5 +79,6 @@ h2{
         width: 100%;
     }
 }
+
  
  

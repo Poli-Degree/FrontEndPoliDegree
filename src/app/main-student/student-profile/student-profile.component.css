@@ -1,88 +1,79 @@
-
 .general{
-    height: 500px;
+  height: 500px;
     
 }
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
 
 .Cabecera{
-    width: 100%;
-    background: rgb(0,236,255);
-    background: linear-gradient(90deg, rgb(112, 134, 136) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
-    padding: 2% 10%;
-    text-align: center;
+  width: 100%;
+  background: rgb(0,236,255);
+  background: linear-gradient(90deg, rgb(112, 134, 136) 0%, rgba(4,4,133,1) 49%, rgba(0,212,255,1) 100%);
+  padding: 2% 10%;
+  text-align: center;
   }
   
-  h1{
-    font-size: xx-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    color:#D0D3D4;
-  }
-
-  .profile{
-      border: #3D60B6 2px solid;
-      font-size: 20px;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .procesos{
-    border: #3D60B6 2px solid;
-    font-size: 20px;
-    float: right;
-    position: relative; bottom: 46px;
-  }
-
-  .image{
-    text-align: center;
-    border: #3D60B6 2px solid;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+h1{
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  color:#D0D3D4;
 }
 
-  .update-picture{
-      text-align: center;
+.profile{
+  font-size: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   }
 
-  p{
-      padding: 10px;
-  }
+.procesos{
+  font-size: 20px;
+  float: right;
+  position: relative; bottom: 46px;
+}
 
-  .switch{
-      padding: 10px;
-  }
+.image{
+  text-align: center;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  .update-button{
-      padding: 10px;
-  }
+.update-picture{
+  text-align: center;
+}
 
+p{
+  padding: 10px;
+}
+
+.switch{
+  padding: 10px;
+}
+
+.update-button{
+  padding: 10px;
+}
+
+.buttons{
+  font-size: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+  .profile{
+    width: 100%;
+  }
+  .image{
+    width: 100;
+    height: 50;
+  }
   .buttons{
-    border: #3D60B6 2px solid;
-    font-size: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    width: 100%;
   }
-
-  @media only screen and (max-width: 500px){
-    .profile{
-      width: 100%;
-    }
-    .image{
-     width: 100;
-     height: 50;
-    }
-    .buttons{
-      width: 100%;
-    }
-    
-
-
-
-  }
+}

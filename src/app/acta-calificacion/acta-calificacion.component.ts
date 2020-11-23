@@ -64,7 +64,7 @@ export class ActaCalificacionComponent implements OnInit {
         ["Jurado 1 - 25% (" + this.newAct.jurado1.toUpperCase() + ")", " " + this.newAct.notaJurado1],
         ["Jurado 2 - 25% (" + this.newAct.jurado2.toUpperCase() + ")", " " + this.newAct.notaJurado2],
         ["Definitiva ", " " + this.definitiva]
-      ]).widths(['*',0]).end
+      ]).widths(['*',200]).end
     );
     pdf.add(
       pdf.ln(5)
